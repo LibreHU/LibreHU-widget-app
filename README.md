@@ -16,6 +16,9 @@ Un service au premier plan (notification discrète) tient les widgets à jour.
 
 ## Branches
 
+Cette branche : **`ivi`** (Jancar ivi-services).
+
+
 | Branche | Source des données |
 |---|---|
 | `main` | aucune (Android générique) : horloge seulement, voyants « — » ; mode démo |

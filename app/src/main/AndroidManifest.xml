@@ -8,6 +8,7 @@
     <queries>
         <!-- Light / dark theme of LibreHU Launcher. -->
         <provider android:authorities="org.librehu.launcher.theme" />
+        <package android:name="com.jancar.services" />
     </queries>
 
     <application
