@@ -4,10 +4,13 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- LibreHU-service API. Install LibreHU-service first so that this permission is granted. -->
+    <uses-permission android:name="org.librehu.permission.HEADUNIT" />
 
     <queries>
         <!-- Light / dark theme of LibreHU Launcher. -->
         <provider android:authorities="org.librehu.launcher.theme" />
+        <package android:name="org.librehu.service" />
     </queries>
 
     <application

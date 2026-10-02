@@ -16,6 +16,9 @@ Un service au premier plan (notification discrète) tient les widgets à jour.
 
 ## Branches
 
+Cette branche : **`librehu-service`** (installer LibreHU-service avant les widgets).
+
+
 | Branche | Source des données |
 |---|---|
 | `main` | aucune (Android générique) : horloge seulement, voyants « — » ; mode démo |

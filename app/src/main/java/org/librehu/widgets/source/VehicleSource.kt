@@ -20,7 +20,18 @@ interface VehicleSource {
     fun stop()
 
     companion object {
-        fun create(context: Context): VehicleSource = NoSource
+        fun create(context: Context): VehicleSource = if (isInstalled(context, "org.librehu.service")) LibreHuSource(context) else NoSource
+
+        private fun isInstalled(
+            context: Context,
+            pkg: String,
+        ): Boolean =
+            try {
+                context.packageManager.getPackageInfo(pkg, 0)
+                true
+            } catch (_: Exception) {
+                false
+            }
     }
 }
 
