@@ -19,7 +19,9 @@ import org.librehu.widgets.data.VehicleData
  * - ICar 11 getHandbrakeStatus (1 = engaged, -1 = unknown), 10 getCcdStatus (reverse), 13 getLightStatusMask
  *   (bit 0 / 1 = left / right turn signal), 14 getHeadLightStatus, 1 getProtocolMcuVersion;
  * - ignition: Settings.Global `accStatus` written by ivi-services (ICar.isAccOn always returns false);
- * - IAudio 8 getParam / 6 getParamMaxValue, parameter 10 = master volume.
+ * - IAudio 8 getParam / 6 getParamMaxValue, parameter 10 = master volume;
+ * - external amplifier: Settings.Global `external_amp_switch` ("External Power Amplifier Enable"), applied by
+ *   ivi-services (MCU 0x44) while the ignition is on.
  */
 class IviSource(
     private val context: Context,
@@ -63,7 +65,9 @@ class IviSource(
                 0 -> false
                 else -> null
             }
-        if (!car.connected) return VehicleData(linkOnline = false, acc = acc)
+        val ampEnabled = Settings.Global.getInt(context.contentResolver, "external_amp_switch", 0) == 1
+        val externalAmp = acc?.let { it && ampEnabled }
+        if (!car.connected) return VehicleData(linkOnline = false, acc = acc, externalAmp = externalAmp)
         val handbrake = car.int(TX_HANDBRAKE)?.let { if (it < 0) null else it == 1 }
         val reverse = car.int(TX_CCD)?.let { if (it < 0) null else it == 1 }
         val lights = car.int(TX_LIGHT_MASK)
@@ -82,6 +86,7 @@ class IviSource(
             mcuVersion = mcuVersion,
             volume = volume,
             maxVolume = maxVolume,
+            externalAmp = externalAmp,
         )
     }
 
