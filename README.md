@@ -5,9 +5,9 @@ app de configuration. Thème clair / sombre automatique, comme les autres applis
 
 | Widget | Contenu |
 |---|---|
-| **Voyants** | rangée de voyants qui s'allument : frein à main (rouge), feux, contact, marche arrière, clignotants, liaison MCU — choix et ordre réglables |
+| **Voyants** | rangée de voyants qui s'allument : frein à main (rouge), feux, contact, marche arrière, clignotants, liaison MCU, **ampli externe** (sortie REM) — choix et ordre réglables |
 | **Horloge** | heure, date et **temps de trajet** depuis la mise du contact (chronomètre) |
-| **Infos** | liste de valeurs : contact, frein à main, temps de trajet, volume, version MCU… — choix et ordre réglables |
+| **Infos** | liste de valeurs : contact, frein à main, ampli externe, temps de trajet, volume, version MCU… — choix et ordre réglables |
 | **Voyant unique** | un grand voyant ou une valeur, choisi en posant le widget |
 
 L'app **Widgets LibreHU** montre les valeurs en direct (« sondes »), règle ce que chaque widget affiche, le thème

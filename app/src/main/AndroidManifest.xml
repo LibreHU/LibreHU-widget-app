@@ -48,6 +48,14 @@
         </service>
 
         <receiver
+            android:name=".ThemeChangedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.librehu.action.THEME_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
             android:name=".BootReceiver"
             android:exported="true">
             <intent-filter>

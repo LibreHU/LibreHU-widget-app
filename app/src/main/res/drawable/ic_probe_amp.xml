@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Amplifier: box with a speaker and level marks. -->
+    <path
+        android:pathData="M4,4h16a1.5,1.5 0 0,1 1.5,1.5v13a1.5,1.5 0 0,1 -1.5,1.5h-16a1.5,1.5 0 0,1 -1.5,-1.5v-13a1.5,1.5 0 0,1 1.5,-1.5z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.6" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M10,12m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0M10,12m-1.5,0a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0" />
+    <path
+        android:pathData="M16.5,8.5h2.5M16.5,12h2.5M16.5,15.5h2.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="1.6" />
+</vector>

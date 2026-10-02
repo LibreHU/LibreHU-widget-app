@@ -44,4 +44,5 @@
     <string name="move_up">Up</string>
     <string name="move_down">Down</string>
     <string name="unknown_hint">— = not reported by this data source.</string>
+    <string name="probe_ext_amp">External amp</string>
 </resources>

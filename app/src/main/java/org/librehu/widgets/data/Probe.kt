@@ -16,6 +16,8 @@ data class VehicleData(
     val mcuVersion: String? = null,
     val volume: Int? = null,
     val maxVolume: Int? = null,
+    /** External amplifier remote (REM) output powered: setting enabled and ignition on. */
+    val externalAmp: Boolean? = null,
     /** SystemClock.elapsedRealtime() when the ignition was switched on (trip timer), null when off / unknown. */
     val accSince: Long? = null,
 )
@@ -39,6 +41,7 @@ enum class Probe(
     TURN_LEFT(ProbeKind.STATE, R.string.probe_turn_left, R.drawable.ic_probe_turn_left, 0xFF4CAF50.toInt()),
     TURN_RIGHT(ProbeKind.STATE, R.string.probe_turn_right, R.drawable.ic_probe_turn_right, 0xFF4CAF50.toInt()),
     LINK(ProbeKind.STATE, R.string.probe_link, R.drawable.ic_probe_link, 0xFF8AB4F8.toInt()),
+    EXT_AMP(ProbeKind.STATE, R.string.probe_ext_amp, R.drawable.ic_probe_amp, 0xFFFFB300.toInt()),
     MCU_VERSION(ProbeKind.TEXT, R.string.probe_mcu_version, R.drawable.ic_probe_link, 0),
     VOLUME(ProbeKind.TEXT, R.string.probe_volume, R.drawable.ic_probe_volume, 0),
     TRIP(ProbeKind.TEXT, R.string.probe_trip, R.drawable.ic_probe_trip, 0),
@@ -53,6 +56,7 @@ enum class Probe(
             TURN_LEFT -> d.turnLeft
             TURN_RIGHT -> d.turnRight
             LINK -> d.linkOnline
+            EXT_AMP -> d.externalAmp
             else -> null
         }
 
