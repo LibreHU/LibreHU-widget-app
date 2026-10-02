@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Widgets LibreHU</string>
+    <string name="notif_channel">Mise à jour des widgets</string>
+    <string name="notif_text">Lit l\'autoradio pour les widgets</string>
+    <string name="widget_indicators_description">Voyants : frein à main, feux, contact, marche arrière, clignotants</string>
+    <string name="widget_clock_description">Heure, date et temps de trajet depuis le contact</string>
+    <string name="widget_info_description">Valeurs de l\'autoradio : contact, frein à main, temps de trajet, volume, version MCU</string>
+    <string name="widget_single_description">Un grand voyant ou une valeur au choix</string>
+    <string name="widget_info_title">Véhicule</string>
+    <string name="probe_handbrake">Frein à main</string>
+    <string name="probe_headlights">Feux</string>
+    <string name="probe_acc">Contact</string>
+    <string name="probe_reverse">Marche arrière</string>
+    <string name="probe_turn_left">Gauche</string>
+    <string name="probe_turn_right">Droite</string>
+    <string name="probe_link">Liaison MCU</string>
+    <string name="probe_mcu_version">Version MCU</string>
+    <string name="probe_volume">Volume</string>
+    <string name="probe_trip">Temps de trajet</string>
+    <string name="state_on">Oui</string>
+    <string name="state_off">Non</string>
+    <string name="state_engaged">Serré</string>
+    <string name="state_released">Desserré</string>
+    <string name="source">Source des données : %1$s</string>
+    <string name="live">Valeurs en direct</string>
+    <string name="section_indicators">Widget voyants</string>
+    <string name="section_indicators_hint">Voyants affichés, dans l\'ordre (%1$d max).</string>
+    <string name="section_info">Widget infos</string>
+    <string name="section_info_hint">Lignes affichées, dans l\'ordre (%1$d max).</string>
+    <string name="section_display">Affichage</string>
+    <string name="show_labels">Afficher les noms sous les voyants</string>
+    <string name="clock_trip">Afficher le temps de trajet sur le widget horloge</string>
+    <string name="section_theme">Thème</string>
+    <string name="theme_follow">Comme le lanceur</string>
+    <string name="theme_headlights">Sombre avec les feux</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="theme_follow_hint">Comme le lanceur : suit LibreHU Launcher (son mode automatique compris), ou Android sans lui. Sombre avec les feux : sombre dès que les feux sont allumés.</string>
+    <string name="demo">Mode démo</string>
+    <string name="demo_hint">Valeurs fictives, pour essayer les widgets hors de la voiture.</string>
+    <string name="add_hint">Ajoutez les widgets depuis la liste des widgets du lanceur (LibreHU Launcher : touchez un emplacement vide du tableau de bord).</string>
+    <string name="pick_probe">Que doit afficher ce widget ?</string>
+    <string name="move_up">Monter</string>
+    <string name="move_down">Descendre</string>
+    <string name="unknown_hint">— = non fourni par cette source de données.</string>
+</resources>

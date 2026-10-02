@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LibreHU Widgets</string>
+    <string name="notif_channel">Widget updates</string>
+    <string name="notif_text">Reads the head unit for the widgets</string>
+    <string name="widget_indicators_description">Indicator lamps: handbrake, lights, ignition, reverse, turn signals</string>
+    <string name="widget_clock_description">Time, date and trip time since ignition on</string>
+    <string name="widget_info_description">Head unit values: ignition, handbrake, trip time, volume, MCU version</string>
+    <string name="widget_single_description">One big lamp or value of your choice</string>
+    <string name="widget_info_title">Vehicle</string>
+    <string name="probe_handbrake">Handbrake</string>
+    <string name="probe_headlights">Lights</string>
+    <string name="probe_acc">Ignition</string>
+    <string name="probe_reverse">Reverse</string>
+    <string name="probe_turn_left">Left</string>
+    <string name="probe_turn_right">Right</string>
+    <string name="probe_link">MCU link</string>
+    <string name="probe_mcu_version">MCU version</string>
+    <string name="probe_volume">Volume</string>
+    <string name="probe_trip">Trip time</string>
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="state_engaged">Engaged</string>
+    <string name="state_released">Released</string>
+    <string name="source">Data source: %1$s</string>
+    <string name="live">Live values</string>
+    <string name="section_indicators">Indicators widget</string>
+    <string name="section_indicators_hint">Lamps shown, in order (up to %1$d).</string>
+    <string name="section_info">Info widget</string>
+    <string name="section_info_hint">Rows shown, in order (up to %1$d).</string>
+    <string name="section_display">Display</string>
+    <string name="show_labels">Show the labels under the lamps</string>
+    <string name="clock_trip">Show the trip time on the clock widget</string>
+    <string name="section_theme">Theme</string>
+    <string name="theme_follow">Like the launcher</string>
+    <string name="theme_headlights">Dark with the lights</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_follow_hint">Like the launcher: follows LibreHU Launcher (its automatic mode included), or Android without it. Dark with the lights: dark as soon as the headlights are on.</string>
+    <string name="demo">Demo mode</string>
+    <string name="demo_hint">Fake values, to try the widgets away from the car.</string>
+    <string name="add_hint">Add the widgets from your launcher\'s widget list (LibreHU Launcher: tap an empty slot of the dashboard).</string>
+    <string name="pick_probe">What should this widget show?</string>
+    <string name="move_up">Up</string>
+    <string name="move_down">Down</string>
+    <string name="unknown_hint">— = not reported by this data source.</string>
+</resources>
