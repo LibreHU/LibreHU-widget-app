@@ -15,7 +15,8 @@ import org.librehu.widgets.data.VehicleData
 
 /**
  * LibreHU-service (https://github.com/LibreHU/LibreHU-service): vehicle flags (MCU link, ignition, handbrake,
- * lights, reverse, turn signals), MCU version and master volume, pushed by the service callbacks.
+ * lights, reverse, turn signals), MCU version, master volume and external amplifier (REM powered = enabled and
+ * ignition on, as the service applies it), pushed by the service callbacks.
  */
 class LibreHuSource(
     private val context: Context,
@@ -119,6 +120,7 @@ class LibreHuSource(
                     mcuVersion = s.mcuVersion,
                     volume = s.volume,
                     maxVolume = s.maxVolume,
+                    externalAmp = flag(FLAG_ACC)?.let { it && s.isExternalAmpEnabled },
                 )
             } catch (e: RemoteException) {
                 VehicleData(linkOnline = false)
