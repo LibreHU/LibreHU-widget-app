@@ -11,7 +11,7 @@ data class WidgetSettings(
     /** Indicator lamps of the "indicators" widget, in order. */
     val indicators: List<Probe> = listOf(Probe.HANDBRAKE, Probe.HEADLIGHTS, Probe.ACC, Probe.REVERSE, Probe.TURN_LEFT, Probe.TURN_RIGHT),
     /** Rows of the "info" widget, in order. */
-    val infoRows: List<Probe> = listOf(Probe.ACC, Probe.HANDBRAKE, Probe.TRIP, Probe.VOLUME, Probe.MCU_VERSION),
+    val infoRows: List<Probe> = listOf(Probe.ACC, Probe.HANDBRAKE, Probe.EXT_AMP, Probe.TRIP, Probe.VOLUME, Probe.MCU_VERSION),
     val showLabels: Boolean = true,
     val clockShowsTrip: Boolean = true,
     val theme: ThemeMode = ThemeMode.FOLLOW,

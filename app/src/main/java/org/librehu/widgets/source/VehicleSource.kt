@@ -57,6 +57,7 @@ class DemoSource : VehicleSource {
                         mcuVersion = "JCST_AC8257_8T7-2024.08.09",
                         volume = 12 + tick % 6,
                         maxVolume = 40,
+                        externalAmp = (tick / 6) % 2 == 0,
                         accSince = since,
                     ),
                 )

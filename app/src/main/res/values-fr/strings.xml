@@ -44,4 +44,5 @@
     <string name="move_up">Monter</string>
     <string name="move_down">Descendre</string>
     <string name="unknown_hint">— = non fourni par cette source de données.</string>
+    <string name="probe_ext_amp">Ampli externe</string>
 </resources>
