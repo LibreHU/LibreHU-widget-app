@@ -55,7 +55,19 @@ import org.librehu.widgets.widget.WidgetRenderer
 @Composable
 private fun FollowWidgetTheme() {
     val dark by WidgetService.dark.collectAsStateWithLifecycle()
-    LaunchedEffect(dark) { CarColors.palette = CarPalette.of(dark) }
+    val accent by WidgetService.accent.collectAsStateWithLifecycle()
+    LaunchedEffect(dark, accent) {
+        CarColors.palette =
+            CarPalette.of(
+                dark,
+                if (accent != 0) {
+                    androidx.compose.ui.graphics
+                        .Color(accent)
+                } else {
+                    null
+                },
+            )
+    }
 }
 
 @OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
