@@ -26,6 +26,6 @@ Cette branche : **`librehu-service`** (installer LibreHU-service avant les widge
 | `librehu-service` | [LibreHU-service](https://github.com/LibreHU/LibreHU-service) : indicateurs véhicule, version MCU, volume |
 
 Le thème suit [LibreHU Launcher](https://github.com/LibreHU/LibreHU-Launcher-App) (y compris son mode
-automatique selon les feux) ; sans lui, le thème sombre d'Android.
+automatique selon les feux et sa **couleur d'accent** : heure, icônes, titres des widgets et app de réglages) ; sans lui, le thème sombre d'Android.
 
 Non testé sur l'autoradio à ce stade.
