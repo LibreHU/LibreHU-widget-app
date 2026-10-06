@@ -18,7 +18,17 @@ import org.librehu.widgets.data.WidgetSettings
 object WidgetRenderer {
     private class Colors(
         dark: Boolean,
+        accentArgb: Int,
     ) {
+        /** Accent of LibreHU Launcher (0 = none: the default blue). */
+        val accent =
+            if (accentArgb != 0) {
+                accentArgb
+            } else if (dark) {
+                0xFF8AB4F8.toInt()
+            } else {
+                0xFF1A73E8.toInt()
+            }
         val background = if (dark) R.drawable.widget_bg_dark else R.drawable.widget_bg_light
         val text = if (dark) 0xFFE8EAED.toInt() else 0xFF202124.toInt()
         val dim = if (dark) 0xFF9AA0A6.toInt() else 0xFF5F6368.toInt()
@@ -62,9 +72,10 @@ object WidgetRenderer {
         d: VehicleData,
         s: WidgetSettings,
         dark: Boolean,
+        accent: Int = 0,
     ) {
         val manager = AppWidgetManager.getInstance(context)
-        val c = Colors(dark)
+        val c = Colors(dark, accent)
         ids(
             context,
             IndicatorsWidget::class.java,
@@ -129,12 +140,12 @@ object WidgetRenderer {
     ) = RemoteViews(context.packageName, R.layout.widget_clock).apply {
         setInt(R.id.root, "setBackgroundResource", c.background)
         setOnClickPendingIntent(R.id.root, openApp(context))
-        setTextColor(R.id.clock_time, c.text)
+        setTextColor(R.id.clock_time, c.accent)
         setTextColor(R.id.clock_date, c.dim)
         val since = d.accSince
         if (s.clockShowsTrip && since != null) {
             setViewVisibility(R.id.clock_trip_row, View.VISIBLE)
-            setInt(R.id.clock_trip_icon, "setColorFilter", c.dim)
+            setInt(R.id.clock_trip_icon, "setColorFilter", c.accent)
             setTextColor(R.id.clock_trip, c.dim)
             // The chronometer runs by itself: no redraw needed every second.
             setChronometer(R.id.clock_trip, since, null, true)
@@ -151,7 +162,7 @@ object WidgetRenderer {
     ) = RemoteViews(context.packageName, R.layout.widget_info).apply {
         setInt(R.id.root, "setBackgroundResource", c.background)
         setOnClickPendingIntent(R.id.root, openApp(context))
-        setTextColor(R.id.info_title, c.text)
+        setTextColor(R.id.info_title, c.accent)
         INFO_ROWS.forEachIndexed { i, ids ->
             val p = s.infoRows.getOrNull(i)
             if (p == null) {
@@ -160,7 +171,17 @@ object WidgetRenderer {
             }
             setViewVisibility(ids[0], View.VISIBLE)
             setImageViewResource(ids[1], p.icon)
-            setInt(ids[1], "setColorFilter", if (p.kind == org.librehu.widgets.data.ProbeKind.STATE) lampColor(p, p.state(d), c) else c.dim)
+            setInt(
+                ids[1],
+                "setColorFilter",
+                if (p.kind ==
+                    org.librehu.widgets.data.ProbeKind.STATE
+                ) {
+                    lampColor(p, p.state(d), c)
+                } else {
+                    c.accent
+                },
+            )
             setTextViewText(ids[2], context.getString(p.label))
             setTextColor(ids[2], c.dim)
             setTextViewText(ids[3], p.text(context, d))
@@ -178,7 +199,7 @@ object WidgetRenderer {
         setInt(R.id.root, "setBackgroundResource", c.background)
         setOnClickPendingIntent(R.id.root, openApp(context))
         setImageViewResource(R.id.single_icon, p.icon)
-        val color = if (p.kind == org.librehu.widgets.data.ProbeKind.STATE) lampColor(p, p.state(d), c) else c.text
+        val color = if (p.kind == org.librehu.widgets.data.ProbeKind.STATE) lampColor(p, p.state(d), c) else c.accent
         setInt(R.id.single_icon, "setColorFilter", color)
         setTextViewText(
             R.id.single_label,
