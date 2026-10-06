@@ -27,6 +27,7 @@ import org.librehu.widgets.data.SettingsStore
 import org.librehu.widgets.data.ThemeFollower
 import org.librehu.widgets.data.ThemeMode
 import org.librehu.widgets.data.VehicleData
+import org.librehu.widgets.data.WidgetSettings
 import org.librehu.widgets.source.DemoSource
 import org.librehu.widgets.source.VehicleSource
 import org.librehu.widgets.widget.WidgetRenderer
@@ -69,16 +70,19 @@ class WidgetService : Service() {
                 }
             }.distinctUntilChanged().collect { _dark.value = it }
         }
+        scope.launch {
+            followed.collect { _accent.value = it.second }
+        }
         // Redraw on any change, and every 30 s for the trip time.
         scope.launch {
-            combine(_data, settings.settings, _dark) { d, s, dark -> Triple(d, s, dark) }.collect { (d, s, dark) ->
-                WidgetRenderer.updateAll(this@WidgetService, d, s, dark)
+            combine(_data, settings.settings, _dark, _accent) { d, s, dark, accent -> listOf(d, s, dark, accent) }.collect { v ->
+                WidgetRenderer.updateAll(this@WidgetService, v[0] as VehicleData, v[1] as WidgetSettings, v[2] as Boolean, v[3] as Int)
             }
         }
         scope.launch {
             while (true) {
                 delay(30_000)
-                WidgetRenderer.updateAll(this@WidgetService, _data.value, settings.settings.value, _dark.value)
+                WidgetRenderer.updateAll(this@WidgetService, _data.value, settings.settings.value, _dark.value, _accent.value)
             }
         }
     }
@@ -108,7 +112,7 @@ class WidgetService : Service() {
         startId: Int,
     ): Int {
         if (intent?.action == ACTION_REFRESH) {
-            WidgetRenderer.updateAll(this, _data.value, settings.settings.value, _dark.value)
+            WidgetRenderer.updateAll(this, _data.value, settings.settings.value, _dark.value, _accent.value)
         }
         if (!WidgetRenderer.hasWidgets(this) && intent?.action == ACTION_STOP_IF_UNUSED) stopSelf()
         return START_STICKY
@@ -153,11 +157,15 @@ class WidgetService : Service() {
 
         private val _data = MutableStateFlow(VehicleData())
         private val _dark = MutableStateFlow(true)
+        private val _accent = MutableStateFlow(0)
         private val _sourceName = MutableStateFlow("")
 
         /** Shared with the settings app (same process). */
         val data: StateFlow<VehicleData> = _data.asStateFlow()
         val dark: StateFlow<Boolean> = _dark.asStateFlow()
+
+        /** Accent of LibreHU Launcher (ARGB, 0 = none). */
+        val accent: StateFlow<Int> = _accent.asStateFlow()
         val sourceName: StateFlow<String> = _sourceName.asStateFlow()
 
         fun start(
