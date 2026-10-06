@@ -120,7 +120,8 @@ class LibreHuSource(
                     mcuVersion = s.mcuVersion,
                     volume = s.volume,
                     maxVolume = s.maxVolume,
-                    externalAmp = flag(FLAG_ACC)?.let { it && s.isExternalAmpEnabled },
+                    // REM follows the power, kept during the engine-start delay (FLAG_POWERED; older services: ACC).
+                    externalAmp = flag(FLAG_POWERED or FLAG_ACC)?.let { it && s.isExternalAmpEnabled },
                 )
             } catch (e: RemoteException) {
                 VehicleData(linkOnline = false)
@@ -136,6 +137,7 @@ class LibreHuSource(
         // org.librehu.service.LibreHu flags.
         const val FLAG_MCU_ONLINE = 1 shl 0
         const val FLAG_ACC = 1 shl 1
+        const val FLAG_POWERED = 1 shl 7
         const val FLAG_HANDBRAKE = 1 shl 2
         const val FLAG_HEADLIGHT = 1 shl 3
         const val FLAG_REVERSE = 1 shl 4
