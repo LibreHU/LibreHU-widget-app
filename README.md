@@ -14,6 +14,14 @@ L'app **Widgets LibreHU** montre les valeurs en direct (« sondes »), règle ce
 (comme le lanceur, sombre avec les feux, clair, sombre) et un **mode démo** pour essayer hors de la voiture.
 Un service au premier plan (notification discrète) tient les widgets à jour.
 
+## Captures d'écran
+
+| | |
+|---|---|
+| ![Valeurs en direct et réglage des widgets](docs/screenshots/main.png)<br>Valeurs en direct et réglage des widgets |  |
+
+Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots).
+
 ## Branches
 
 Cette branche : **`librehu-service`** (installer LibreHU-service avant les widgets).
