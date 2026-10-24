@@ -81,7 +81,10 @@ class WidgetService : Service() {
         }
         scope.launch {
             while (true) {
-                delay(30_000)
+                // At least every 30 s, and right when the minute changes: the clock drawn in the segment font (a
+                // picture, not a TextClock) shows the new minute at once.
+                val toMinute = 60_000 - System.currentTimeMillis() % 60_000 + 50
+                delay(toMinute.coerceAtMost(30_000))
                 WidgetRenderer.updateAll(this@WidgetService, _data.value, settings.settings.value, _dark.value, _accent.value)
             }
         }
