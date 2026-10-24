@@ -16,6 +16,16 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/info_title_seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:scaleType="fitStart"
+        android:visibility="gone" />
+
     <LinearLayout
         android:id="@+id/row0"
         android:layout_width="match_parent"
@@ -39,6 +49,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label0_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value0"
             android:layout_width="wrap_content"
@@ -47,6 +68,16 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value0_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -72,6 +103,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label1_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value1"
             android:layout_width="wrap_content"
@@ -80,6 +122,16 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value1_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -105,6 +157,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label2_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value2"
             android:layout_width="wrap_content"
@@ -113,6 +176,16 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value2_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -138,6 +211,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label3_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value3"
             android:layout_width="wrap_content"
@@ -146,6 +230,16 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value3_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -171,6 +265,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label4_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value4"
             android:layout_width="wrap_content"
@@ -179,6 +284,16 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value4_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -204,6 +319,17 @@
             android:maxLines="1"
             android:textSize="15sp" />
 
+        <ImageView
+            android:id="@+id/row_label5_seg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/row_value5"
             android:layout_width="wrap_content"
@@ -212,5 +338,15 @@
             android:maxLines="1"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/row_value5_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 </LinearLayout>
