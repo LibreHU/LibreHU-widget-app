@@ -13,6 +13,8 @@ import org.librehu.widgets.data.Probe
 import org.librehu.widgets.data.SettingsStore
 import org.librehu.widgets.data.VehicleData
 import org.librehu.widgets.data.WidgetSettings
+import org.librehu.widgets.ui.RetroLook
+import org.librehu.widgets.ui.SegmentViews
 
 /** Draws every widget of the app (RemoteViews) from the vehicle data, settings and theme. */
 object WidgetRenderer {
@@ -20,9 +22,14 @@ object WidgetRenderer {
         dark: Boolean,
         accentArgb: Int,
     ) {
+        /** LibreHU Launcher's retro palette (its style is retro, same light / dark), else null: the usual colours. */
+        val retro = RetroLook.widget(dark)
+
         /** Accent of LibreHU Launcher (0 = none: the default blue). */
         val accent =
-            if (accentArgb != 0) {
+            if (retro != null) {
+                retro.accent
+            } else if (accentArgb != 0) {
                 accentArgb
             } else if (dark) {
                 0xFF8AB4F8.toInt()
@@ -30,11 +37,14 @@ object WidgetRenderer {
                 0xFF1A73E8.toInt()
             }
         val background = if (dark) R.drawable.widget_bg_dark else R.drawable.widget_bg_light
-        val text = if (dark) 0xFFE8EAED.toInt() else 0xFF202124.toInt()
-        val dim = if (dark) 0xFF9AA0A6.toInt() else 0xFF5F6368.toInt()
+        val text = retro?.text ?: if (dark) 0xFFE8EAED.toInt() else 0xFF202124.toInt()
+        val dim = retro?.textDim ?: if (dark) 0xFF9AA0A6.toInt() else 0xFF5F6368.toInt()
         val off = if (dark) 0xFF5F6368.toInt() else 0xFFBDC1C6.toInt()
-        val unknown = if (dark) 0xFF35363A.toInt() else 0xFFE8EAED.toInt()
+        val unknown = retro?.surfaceHigh ?: if (dark) 0xFF35363A.toInt() else 0xFFE8EAED.toInt()
         val isDark = dark
+
+        fun paintBackground(views: RemoteViews) =
+            if (retro != null) views.setInt(R.id.root, "setBackgroundColor", retro.surface) else views.setInt(R.id.root, "setBackgroundResource", background)
     }
 
     private val INDICATOR_SLOTS =
@@ -111,8 +121,8 @@ object WidgetRenderer {
         d: VehicleData,
         s: WidgetSettings,
         c: Colors,
-    ) = RemoteViews(context.packageName, R.layout.widget_indicators).apply {
-        setInt(R.id.root, "setBackgroundResource", c.background)
+    ) = SegmentViews(context, R.layout.widget_indicators, RetroLook.segment).apply {
+        c.paintBackground(this)
         setOnClickPendingIntent(R.id.root, openApp(context))
         val probes = s.indicators.filter { it.kind == org.librehu.widgets.data.ProbeKind.STATE }
         INDICATOR_SLOTS.forEachIndexed { i, (slot, icon, label) ->
@@ -137,8 +147,8 @@ object WidgetRenderer {
         d: VehicleData,
         s: WidgetSettings,
         c: Colors,
-    ) = RemoteViews(context.packageName, R.layout.widget_clock).apply {
-        setInt(R.id.root, "setBackgroundResource", c.background)
+    ) = SegmentViews(context, R.layout.widget_clock, RetroLook.segment).apply {
+        c.paintBackground(this)
         setOnClickPendingIntent(R.id.root, openApp(context))
         setTextColor(R.id.clock_time, c.accent)
         setTextColor(R.id.clock_date, c.dim)
@@ -159,8 +169,8 @@ object WidgetRenderer {
         d: VehicleData,
         s: WidgetSettings,
         c: Colors,
-    ) = RemoteViews(context.packageName, R.layout.widget_info).apply {
-        setInt(R.id.root, "setBackgroundResource", c.background)
+    ) = SegmentViews(context, R.layout.widget_info, RetroLook.segment).apply {
+        c.paintBackground(this)
         setOnClickPendingIntent(R.id.root, openApp(context))
         setTextColor(R.id.info_title, c.accent)
         INFO_ROWS.forEachIndexed { i, ids ->
@@ -195,8 +205,8 @@ object WidgetRenderer {
         s: WidgetSettings,
         c: Colors,
         p: Probe,
-    ) = RemoteViews(context.packageName, R.layout.widget_single).apply {
-        setInt(R.id.root, "setBackgroundResource", c.background)
+    ) = SegmentViews(context, R.layout.widget_single, RetroLook.segment).apply {
+        c.paintBackground(this)
         setOnClickPendingIntent(R.id.root, openApp(context))
         setImageViewResource(R.id.single_icon, p.icon)
         val color = if (p.kind == org.librehu.widgets.data.ProbeKind.STATE) lampColor(p, p.state(d), c) else c.accent
