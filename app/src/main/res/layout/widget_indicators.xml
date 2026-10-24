@@ -32,6 +32,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label0_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -58,6 +69,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label1_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -84,6 +106,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label2_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -110,6 +143,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label3_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -136,6 +180,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label4_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -162,6 +217,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label5_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -188,6 +254,17 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label6_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -214,5 +291,16 @@
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/label7_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 </LinearLayout>

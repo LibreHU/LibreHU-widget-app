@@ -16,6 +16,15 @@
         android:includeFontPadding="false"
         android:textSize="64sp" />
 
+    <ImageView
+        android:id="@+id/clock_time_seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:scaleType="fitStart"
+        android:visibility="gone" />
+
     <TextClock
         android:id="@+id/clock_date"
         android:layout_width="wrap_content"
@@ -23,6 +32,15 @@
         android:format12Hour="EEEE d MMMM"
         android:format24Hour="EEEE d MMMM"
         android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/clock_date_seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:scaleType="fitStart"
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/clock_trip_row"
@@ -44,5 +62,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clock_trip_seg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
     </LinearLayout>
 </LinearLayout>
