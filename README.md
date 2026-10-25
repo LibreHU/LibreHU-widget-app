@@ -18,9 +18,10 @@ Un service au premier plan (notification discrète) tient les widgets à jour.
 
 | | |
 |---|---|
-| ![Valeurs en direct et réglage des widgets](docs/screenshots/main.png)<br>Valeurs en direct et réglage des widgets |  |
+| ![Écran principal](docs/screenshots/main.png)<br>Écran principal | ![Écran principal (2)](docs/screenshots/main-2.png)<br>Écran principal (2) |
+| ![Écran principal (3)](docs/screenshots/main-3.png)<br>Écran principal (3) |   |
 
-Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots).
+Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots). Galerie : [librehu.github.io/screenshots/widgets.html](https://librehu.github.io/screenshots/widgets.html).
 
 ## Branches
 
