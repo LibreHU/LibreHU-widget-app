@@ -18,9 +18,10 @@ Un service au premier plan (notification discrète) tient les widgets à jour.
 
 | | |
 |---|---|
-| ![Valeurs en direct et réglage des widgets](docs/screenshots/main.png)<br>Valeurs en direct et réglage des widgets |  |
+| ![Écran principal](docs/screenshots/main.png)<br>Écran principal | ![Écran principal (2)](docs/screenshots/main-2.png)<br>Écran principal (2) |
+| ![Écran principal (3)](docs/screenshots/main-3.png)<br>Écran principal (3) |   |
 
-Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots).
+Captures sur l'émulateur Android 9 (1280×720, 160 dpi comme l'autoradio), sans autoradio branché : les valeurs du véhicule et de la MCU sont vides. Refaites-les avec l'action **Screenshots** de [LibreHU-OTA-app](https://github.com/LibreHU/LibreHU-OTA-app/tree/main/screenshots). Galerie : [librehu.github.io/screenshots/widgets.html](https://librehu.github.io/screenshots/widgets.html).
 
 ## Branches
 
@@ -70,3 +71,12 @@ taille du widget, donc coupé avec « … », aligné et sur ses lignes comme d'
 chaque texte des layouts `widget*.xml` par `tools/segment_widgets.py` (à relancer après avoir modifié un layout de
 widget). Les fonds rétro sont des couleurs unies (Android 9 ne teinte pas un fond de widget ; la case arrondie du
 launcher les découpe). L'horloge est redessinée pile au changement de minute.
+
+## Soutenir le projet
+
+LibreHU est développé bénévolement, sur le temps libre, et toutes ses applis restent gratuites. Si le projet vous est
+utile, vous pouvez le soutenir par un don sur [Liberapay](https://liberapay.com/DokT/donate) (association française à
+but non lucratif, dons récurrents) :
+
+[![Faire un don avec Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/DokT/donate)
+[![Donateurs sur Liberapay](https://img.shields.io/liberapay/patrons/DokT.svg?logo=liberapay)](https://liberapay.com/DokT/)
