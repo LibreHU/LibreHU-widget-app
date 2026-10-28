@@ -11,6 +11,12 @@ import org.librehu.widgets.ui.ProbePicker
 
 /** Shown when a single-probe widget is placed: pick the lamp or value it displays. */
 class SingleConfigActivity : ComponentActivity() {
+    /** A click on each tap, the sound of LibreHU Launcher's style (see KeyClick). */
+    override fun dispatchTouchEvent(ev: android.view.MotionEvent): Boolean {
+        org.librehu.widgets.ui.KeyClick.onTouch(this, ev, org.librehu.widgets.ui.RetroLook.style)
+        return super.dispatchTouchEvent(ev)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val id =
