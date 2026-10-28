@@ -1,6 +1,7 @@
 package org.librehu.widgets.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -79,60 +80,63 @@ fun SettingsScreen() {
     val s by store.settings.collectAsStateWithLifecycle()
     val d by WidgetService.data.collectAsStateWithLifecycle()
     val source by WidgetService.sourceName.collectAsStateWithLifecycle()
-    Row(
-        modifier =
-            Modifier
-                .fillMaxSize()
-                .background(CarColors.Background)
-                .safeDrawingPadding()
-                .padding(16.dp),
-        horizontalArrangement = Arrangement.spacedBy(16.dp),
-    ) {
-        Card(Modifier.weight(1f).fillMaxHeight()) {
-            Text(stringResource(R.string.live), color = CarColors.Text, fontSize = 24.sp, fontWeight = FontWeight.Medium)
-            Text(stringResource(R.string.source, source), color = CarColors.TextDim, fontSize = 15.sp)
-            Spacer(Modifier.height(16.dp))
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                Probe.entries.forEach { p -> LiveTile(p, d) }
-            }
-            Spacer(Modifier.height(12.dp))
-            Text(stringResource(R.string.unknown_hint), color = CarColors.TextDim, fontSize = 13.sp)
-        }
-        Card(Modifier.weight(1.2f).fillMaxHeight().verticalScroll(rememberScrollState())) {
-            Section(R.string.section_indicators)
-            Hint(stringResource(R.string.section_indicators_hint, WidgetRenderer.MAX_INDICATORS))
-            ProbeList(Probe.STATES, s.indicators, WidgetRenderer.MAX_INDICATORS) { list -> store.update { it.copy(indicators = list) } }
-
-            Section(R.string.section_info)
-            Hint(stringResource(R.string.section_info_hint, WidgetRenderer.MAX_INFO_ROWS))
-            ProbeList(Probe.entries, s.infoRows, WidgetRenderer.MAX_INFO_ROWS) { list -> store.update { it.copy(infoRows = list) } }
-
-            Section(R.string.section_display)
-            SwitchRow(stringResource(R.string.show_labels), null, s.showLabels) { on -> store.update { it.copy(showLabels = on) } }
-            SwitchRow(stringResource(R.string.clock_trip), null, s.clockShowsTrip) { on -> store.update { it.copy(clockShowsTrip = on) } }
-
-            Section(R.string.section_theme)
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                listOf(
-                    ThemeMode.FOLLOW to R.string.theme_follow,
-                    ThemeMode.HEADLIGHTS to R.string.theme_headlights,
-                    ThemeMode.LIGHT to R.string.theme_light,
-                    ThemeMode.DARK to R.string.theme_dark,
-                ).forEach { (mode, label) ->
-                    Choice(stringResource(label), s.theme == mode) { store.update { it.copy(theme = mode) } }
+    val body: @Composable (Modifier) -> Unit = { m ->
+        Row(
+            modifier = m,
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+        ) {
+            Card(Modifier.weight(1f).fillMaxHeight()) {
+                Text(stringResource(R.string.live), color = CarColors.Text, fontSize = 24.sp, fontWeight = FontWeight.Medium)
+                Text(stringResource(R.string.source, source), color = CarColors.TextDim, fontSize = 15.sp)
+                Spacer(Modifier.height(16.dp))
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Probe.entries.forEach { p -> LiveTile(p, d) }
                 }
+                Spacer(Modifier.height(12.dp))
+                Text(stringResource(R.string.unknown_hint), color = CarColors.TextDim, fontSize = 13.sp)
             }
-            Hint(stringResource(R.string.theme_follow_hint))
+            Card(Modifier.weight(1.2f).fillMaxHeight().verticalScroll(rememberScrollState())) {
+                Section(R.string.section_indicators)
+                Hint(stringResource(R.string.section_indicators_hint, WidgetRenderer.MAX_INDICATORS))
+                ProbeList(Probe.STATES, s.indicators, WidgetRenderer.MAX_INDICATORS) { list -> store.update { it.copy(indicators = list) } }
 
-            Section(R.string.demo)
-            SwitchRow(
-                stringResource(R.string.demo),
-                stringResource(R.string.demo_hint),
-                s.demo,
-            ) { on -> store.update { it.copy(demo = on) } }
-            Spacer(Modifier.height(12.dp))
-            Hint(stringResource(R.string.add_hint))
+                Section(R.string.section_info)
+                Hint(stringResource(R.string.section_info_hint, WidgetRenderer.MAX_INFO_ROWS))
+                ProbeList(Probe.entries, s.infoRows, WidgetRenderer.MAX_INFO_ROWS) { list -> store.update { it.copy(infoRows = list) } }
+
+                Section(R.string.section_display)
+                SwitchRow(stringResource(R.string.show_labels), null, s.showLabels) { on -> store.update { it.copy(showLabels = on) } }
+                SwitchRow(stringResource(R.string.clock_trip), null, s.clockShowsTrip) { on -> store.update { it.copy(clockShowsTrip = on) } }
+
+                Section(R.string.section_theme)
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    listOf(
+                        ThemeMode.FOLLOW to R.string.theme_follow,
+                        ThemeMode.HEADLIGHTS to R.string.theme_headlights,
+                        ThemeMode.LIGHT to R.string.theme_light,
+                        ThemeMode.DARK to R.string.theme_dark,
+                    ).forEach { (mode, label) ->
+                        Choice(stringResource(label), s.theme == mode) { store.update { it.copy(theme = mode) } }
+                    }
+                }
+                Hint(stringResource(R.string.theme_follow_hint))
+
+                Section(R.string.demo)
+                SwitchRow(
+                    stringResource(R.string.demo),
+                    stringResource(R.string.demo_hint),
+                    s.demo,
+                ) { on -> store.update { it.copy(demo = on) } }
+                Spacer(Modifier.height(12.dp))
+                Hint(stringResource(R.string.add_hint))
+            }
         }
+    }
+    // LibreHU Launcher's car styles: the screen in the style's frame (the launcher asks the app for them).
+    if (carStyled) {
+        StyledFrame(stringResource(R.string.app_name), emptyList()) { body(Modifier.fillMaxSize()) }
+    } else {
+        body(Modifier.fillMaxSize().background(CarColors.Background).safeDrawingPadding().padding(16.dp))
     }
 }
 
@@ -276,15 +280,17 @@ private fun Card(
 ) {
     Column(
         modifier =
-            modifier
-                .clip(RoundedCornerShape(28.dp))
-                .background(CarColors.Surface)
-                .padding(20.dp),
+            when {
+                RetroLook.factory -> modifier.padding(8.dp)
+                RetroLook.ambient -> modifier.background(Color.Black.copy(alpha = 0.6f)).border(1.dp, CarColors.Accent).padding(16.dp)
+                else -> modifier.clip(RoundedCornerShape(28.dp)).background(CarColors.Surface).padding(20.dp)
+            },
     ) { content() }
 }
 
 @Composable
 private fun Section(title: Int) {
+    if (RetroLook.factory) return FactoryListTitle(stringResource(title), Modifier.padding(top = 12.dp))
     Text(
         stringResource(title),
         color = CarColors.Accent,
@@ -305,6 +311,7 @@ private fun Choice(
     selected: Boolean,
     onClick: () -> Unit,
 ) {
+    if (carStyled) return StyledPill(label, selected, onClick = onClick)
     Text(
         label,
         color = if (selected) CarColors.OnAccent else CarColors.Text,
@@ -326,6 +333,7 @@ private fun SwitchRow(
     checked: Boolean,
     onChange: (Boolean) -> Unit,
 ) {
+    if (carStyled) return StyledSwitchRow(title, subtitle, checked, onChange = onChange)
     Row(
         modifier =
             Modifier
