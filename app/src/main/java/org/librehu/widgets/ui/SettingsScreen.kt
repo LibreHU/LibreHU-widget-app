@@ -32,6 +32,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -80,6 +83,7 @@ fun SettingsScreen() {
     val s by store.settings.collectAsStateWithLifecycle()
     val d by WidgetService.data.collectAsStateWithLifecycle()
     val source by WidgetService.sourceName.collectAsStateWithLifecycle()
+    var info by remember { mutableStateOf(false) }
     val body: @Composable (Modifier) -> Unit = { m ->
         Row(
             modifier = m,
@@ -129,6 +133,8 @@ fun SettingsScreen() {
                 ) { on -> store.update { it.copy(demo = on) } }
                 Spacer(Modifier.height(12.dp))
                 Hint(stringResource(R.string.add_hint))
+                Spacer(Modifier.height(12.dp))
+                Choice(stringResource(R.string.info_title), false) { info = true }
             }
         }
     }
@@ -138,6 +144,7 @@ fun SettingsScreen() {
     } else {
         body(Modifier.fillMaxSize().background(CarColors.Background).safeDrawingPadding().padding(16.dp))
     }
+    if (info) InfoDialog { info = false }
 }
 
 @Composable
