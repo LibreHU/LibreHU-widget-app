@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dutch translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU-widgets</string>
+    <string name="notif_channel">Widgets bijwerken</string>
+    <string name="notif_text">Leest de autoradio voor de widgets</string>
+    <string name="widget_indicators_description">Controlelampjes: handrem, verlichting, contact, achteruit, richtingaanwijzers</string>
+    <string name="widget_clock_description">Tijd, datum en rijtijd sinds het contact aan ging</string>
+    <string name="widget_info_description">Waarden van de autoradio: contact, handrem, rijtijd, volume, MCU-versie</string>
+    <string name="widget_single_description">Eén groot lampje of een waarde naar keuze</string>
+    <string name="widget_info_title">Voertuig</string>
+    <string name="probe_handbrake">Handrem</string>
+    <string name="probe_headlights">Verlichting</string>
+    <string name="probe_acc">Contact</string>
+    <string name="probe_reverse">Achteruit</string>
+    <string name="probe_turn_left">Links</string>
+    <string name="probe_turn_right">Rechts</string>
+    <string name="probe_link">MCU-verbinding</string>
+    <string name="probe_mcu_version">MCU-versie</string>
+    <string name="probe_volume">Volume</string>
+    <string name="probe_trip">Rijtijd</string>
+    <string name="state_on">Aan</string>
+    <string name="state_off">Uit</string>
+    <string name="state_engaged">Aangetrokken</string>
+    <string name="state_released">Los</string>
+    <string name="source">Gegevensbron: %1$s</string>
+    <string name="live">Live waarden</string>
+    <string name="section_indicators">Widget controlelampjes</string>
+    <string name="section_indicators_hint">Getoonde lampjes, op volgorde (max. %1$d).</string>
+    <string name="section_info">Infowidget</string>
+    <string name="section_info_hint">Getoonde regels, op volgorde (max. %1$d).</string>
+    <string name="section_display">Weergave</string>
+    <string name="show_labels">Namen onder de lampjes tonen</string>
+    <string name="clock_trip">Rijtijd op de klokwidget tonen</string>
+    <string name="section_theme">Thema</string>
+    <string name="theme_follow">Zoals de launcher</string>
+    <string name="theme_headlights">Donker met de verlichting</string>
+    <string name="theme_light">Licht</string>
+    <string name="theme_dark">Donker</string>
+    <string name="theme_follow_hint">Zoals de launcher: volgt LibreHU Launcher (inclusief de automatische modus), of Android zonder launcher. Donker met de verlichting: donker zodra de koplampen aan zijn.</string>
+    <string name="demo">Demomodus</string>
+    <string name="demo_hint">Nepwaarden, om de widgets buiten de auto te proberen.</string>
+    <string name="add_hint">Voeg de widgets toe uit de widgetlijst van je launcher (LibreHU Launcher: tik op een lege plek van het dashboard).</string>
+    <string name="pick_probe">Wat moet deze widget tonen?</string>
+    <string name="move_up">Omhoog</string>
+    <string name="move_down">Omlaag</string>
+    <string name="unknown_hint">— = niet doorgegeven door deze gegevensbron.</string>
+    <string name="probe_ext_amp">Externe versterker</string>
+    <string name="info_title">Info</string>
+    <string name="info_version">Versie %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 bijdragers aan LibreHU.</string>
+    <string name="info_licence">Vrije software: je mag hem delen en wijzigen onder de GNU Affero General Public License, versie 3 of (naar keuze) een latere versie, met de aanvullende voorwaarden van artikel 7: de vermelding “Based on LibreHU” behouden en een gewijzigde versie als zodanig aanduiden. Wie een gewijzigde versie verspreidt, of op afstand laat gebruiken, moet de volledige broncode onder dezelfde licentie geven. Geen garantie, voor zover de wet dat toestaat (artikelen 15 en 16).</string>
+    <string name="info_source">Broncode: %1$s</string>
+    <string name="info_contact">Contact: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Aanvullende voorwaarden</string>
+    <string name="info_others">Code, bronnen en gegevens van andere projecten</string>
+    <string name="info_others_hint">Tik er een aan om de licentie te lezen.</string>
+    <string name="info_close">Sluiten</string>
+</resources>

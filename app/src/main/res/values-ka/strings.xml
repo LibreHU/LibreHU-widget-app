@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Georgian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU ვიჯეტები</string>
+    <string name="notif_channel">ვიჯეტების განახლება</string>
+    <string name="notif_text">ვიჯეტებისთვის მაგნიტოლის მონაცემებს კითხულობს</string>
+    <string name="widget_indicators_description">ინდიკატორები: ხელის მუხრუჭი, ფარები, ანთება, უკანა სვლა, მოხვევის მაჩვენებლები</string>
+    <string name="widget_clock_description">დრო, თარიღი და მგზავრობის ხანგრძლივობა ანთებიდან</string>
+    <string name="widget_info_description">მაგნიტოლის მნიშვნელობები: ანთება, ხელის მუხრუჭი, მგზავრობის დრო, ხმა, MCU-ს ვერსია</string>
+    <string name="widget_single_description">ერთი დიდი ინდიკატორი ან სასურველი მნიშვნელობა</string>
+    <string name="widget_info_title">ავტომობილი</string>
+    <string name="probe_handbrake">ხელის მუხრუჭი</string>
+    <string name="probe_headlights">ფარები</string>
+    <string name="probe_acc">ანთება</string>
+    <string name="probe_reverse">უკანა სვლა</string>
+    <string name="probe_turn_left">მარცხნივ</string>
+    <string name="probe_turn_right">მარჯვნივ</string>
+    <string name="probe_link">MCU-სთან კავშირი</string>
+    <string name="probe_mcu_version">MCU-ს ვერსია</string>
+    <string name="probe_volume">ხმა</string>
+    <string name="probe_trip">მგზავრობის დრო</string>
+    <string name="state_on">ჩართ.</string>
+    <string name="state_off">გამორთ.</string>
+    <string name="state_engaged">აწეული</string>
+    <string name="state_released">დაშვებული</string>
+    <string name="source">მონაცემთა წყარო: %1$s</string>
+    <string name="live">მიმდინარე მნიშვნელობები</string>
+    <string name="section_indicators">ინდიკატორების ვიჯეტი</string>
+    <string name="section_indicators_hint">ნაჩვენები ინდიკატორები, თანმიმდევრობით (მაქს. %1$d).</string>
+    <string name="section_info">საინფორმაციო ვიჯეტი</string>
+    <string name="section_info_hint">ნაჩვენები სტრიქონები, თანმიმდევრობით (მაქს. %1$d).</string>
+    <string name="section_display">ჩვენება</string>
+    <string name="show_labels">სახელების ჩვენება ინდიკატორების ქვეშ</string>
+    <string name="clock_trip">მგზავრობის დროის ჩვენება საათის ვიჯეტზე</string>
+    <string name="section_theme">თემა</string>
+    <string name="theme_follow">ლაუნჩერის მსგავსად</string>
+    <string name="theme_headlights">მუქი ჩართული ფარებით</string>
+    <string name="theme_light">ღია</string>
+    <string name="theme_dark">მუქი</string>
+    <string name="theme_follow_hint">ლაუნჩერის მსგავსად: მიჰყვება LibreHU Launcher-ს (მისი ავტომატური რეჟიმის ჩათვლით), მის გარეშე კი Android-ს. მუქი ჩართული ფარებით: მუქდება, როგორც კი ფარები ჩაირთვება.</string>
+    <string name="demo">დემო რეჟიმი</string>
+    <string name="demo_hint">გამოგონილი მნიშვნელობები ვიჯეტების მანქანის გარეთ მოსასინჯად.</string>
+    <string name="add_hint">დაამატეთ ვიჯეტები თქვენი ლაუნჩერის ვიჯეტების სიიდან (LibreHU Launcher: შეეხეთ დაფის ცარიელ ადგილს).</string>
+    <string name="pick_probe">რა აჩვენოს ამ ვიჯეტმა?</string>
+    <string name="move_up">ზემოთ</string>
+    <string name="move_down">ქვემოთ</string>
+    <string name="unknown_hint">— = ეს მონაცემთა წყარო არ აწვდის.</string>
+    <string name="probe_ext_amp">გარე გამაძლიერებელი</string>
+    <string name="info_title">ინფორმაცია</string>
+    <string name="info_version">ვერსია %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU-ის მონაწილეები.</string>
+    <string name="info_licence">თავისუფალი პროგრამა: შეგიძლიათ გააზიაროთ და შეცვალოთ GNU Affero General Public License-ის მე-3 ან (თქვენი არჩევით) ნებისმიერი უფრო ახალი ვერსიით, მისი მე-7 ნაწილის დამატებითი პირობებით: შეინარჩუნეთ წარწერა “Based on LibreHU” და შეცვლილი ვერსია მონიშნეთ შეცვლილად. ვინც შეცვლილ ვერსიას ავრცელებს ან დისტანციურად გამოყენების საშუალებას იძლევა, ვალდებულია მისი სრული საწყისი კოდი იმავე ლიცენზიით მისცეს. გარანტიის გარეშე, კანონით დაშვებულ ფარგლებში (ნაწილები 15 და 16).</string>
+    <string name="info_source">საწყისი კოდი: %1$s</string>
+    <string name="info_contact">კონტაქტი: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">დამატებითი პირობები</string>
+    <string name="info_others">სხვა პროექტების კოდი, რესურსები და მონაცემები</string>
+    <string name="info_others_hint">შეეხეთ ერთ-ერთს მისი ლიცენზიის წასაკითხად.</string>
+    <string name="info_close">დახურვა</string>
+</resources>

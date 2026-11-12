@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Russian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Виджеты LibreHU</string>
+    <string name="notif_channel">Обновление виджетов</string>
+    <string name="notif_text">Читает данные магнитолы для виджетов</string>
+    <string name="widget_indicators_description">Индикаторы: ручник, фары, зажигание, задний ход, поворотники</string>
+    <string name="widget_clock_description">Время, дата и время в пути с момента включения зажигания</string>
+    <string name="widget_info_description">Данные магнитолы: зажигание, ручник, время в пути, громкость, версия MCU</string>
+    <string name="widget_single_description">Один крупный индикатор или значение на выбор</string>
+    <string name="widget_info_title">Автомобиль</string>
+    <string name="probe_handbrake">Ручник</string>
+    <string name="probe_headlights">Фары</string>
+    <string name="probe_acc">Зажигание</string>
+    <string name="probe_reverse">Задний ход</string>
+    <string name="probe_turn_left">Влево</string>
+    <string name="probe_turn_right">Вправо</string>
+    <string name="probe_link">Связь с MCU</string>
+    <string name="probe_mcu_version">Версия MCU</string>
+    <string name="probe_volume">Громкость</string>
+    <string name="probe_trip">Время в пути</string>
+    <string name="state_on">Вкл.</string>
+    <string name="state_off">Выкл.</string>
+    <string name="state_engaged">Затянут</string>
+    <string name="state_released">Опущен</string>
+    <string name="source">Источник данных: %1$s</string>
+    <string name="live">Текущие значения</string>
+    <string name="section_indicators">Виджет индикаторов</string>
+    <string name="section_indicators_hint">Показываемые индикаторы по порядку (не больше %1$d).</string>
+    <string name="section_info">Информационный виджет</string>
+    <string name="section_info_hint">Показываемые строки по порядку (не больше %1$d).</string>
+    <string name="section_display">Отображение</string>
+    <string name="show_labels">Подписи под индикаторами</string>
+    <string name="clock_trip">Показывать время в пути на виджете часов</string>
+    <string name="section_theme">Тема</string>
+    <string name="theme_follow">Как в лаунчере</string>
+    <string name="theme_headlights">Тёмная при включённых фарах</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_follow_hint">Как в лаунчере: следует LibreHU Launcher (включая его автоматический режим), а без него — Android. Тёмная при включённых фарах: тёмная, как только включены фары.</string>
+    <string name="demo">Демо-режим</string>
+    <string name="demo_hint">Вымышленные значения, чтобы попробовать виджеты вне машины.</string>
+    <string name="add_hint">Добавьте виджеты из списка виджетов лаунчера (LibreHU Launcher: нажмите на пустое место панели).</string>
+    <string name="pick_probe">Что показывать в этом виджете?</string>
+    <string name="move_up">Вверх</string>
+    <string name="move_down">Вниз</string>
+    <string name="unknown_hint">— = этот источник данных не сообщает значение.</string>
+    <string name="probe_ext_amp">Внешний усилитель</string>
+    <string name="info_title">О приложении</string>
+    <string name="info_version">Версия %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 участники проекта LibreHU.</string>
+    <string name="info_licence">Свободное ПО: его можно распространять и изменять на условиях GNU Affero General Public License версии 3 или (по вашему выбору) любой более поздней, с дополнительными условиями её раздела 7: сохранять пометку “Based on LibreHU” и обозначать изменённую версию как изменённую. Кто распространяет изменённую версию или даёт пользоваться ею удалённо, обязан предоставить её полный исходный код на тех же условиях. Без гарантий в пределах, допускаемых законом (разделы 15 и 16).</string>
+    <string name="info_source">Исходный код: %1$s</string>
+    <string name="info_contact">Контакт: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Дополнительные условия</string>
+    <string name="info_others">Код, ресурсы и данные других проектов</string>
+    <string name="info_others_hint">Нажмите, чтобы прочитать лицензию.</string>
+    <string name="info_close">Закрыть</string>
+</resources>

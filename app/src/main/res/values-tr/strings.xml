@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Turkish translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU Widget\'ları</string>
+    <string name="notif_channel">Widget güncellemeleri</string>
+    <string name="notif_text">Widget\'lar için multimedya ünitesini okur</string>
+    <string name="widget_indicators_description">Uyarı lambaları: el freni, farlar, kontak, geri vites, sinyaller</string>
+    <string name="widget_clock_description">Saat, tarih ve kontak açıldığından beri yolculuk süresi</string>
+    <string name="widget_info_description">Multimedya ünitesi değerleri: kontak, el freni, yolculuk süresi, ses düzeyi, MCU sürümü</string>
+    <string name="widget_single_description">Seçtiğiniz büyük bir lamba ya da değer</string>
+    <string name="widget_info_title">Araç</string>
+    <string name="probe_handbrake">El freni</string>
+    <string name="probe_headlights">Farlar</string>
+    <string name="probe_acc">Kontak</string>
+    <string name="probe_reverse">Geri vites</string>
+    <string name="probe_turn_left">Sol</string>
+    <string name="probe_turn_right">Sağ</string>
+    <string name="probe_link">MCU bağlantısı</string>
+    <string name="probe_mcu_version">MCU sürümü</string>
+    <string name="probe_volume">Ses düzeyi</string>
+    <string name="probe_trip">Yolculuk süresi</string>
+    <string name="state_on">Açık</string>
+    <string name="state_off">Kapalı</string>
+    <string name="state_engaged">Çekili</string>
+    <string name="state_released">İndirili</string>
+    <string name="source">Veri kaynağı: %1$s</string>
+    <string name="live">Canlı değerler</string>
+    <string name="section_indicators">Uyarı lambaları widget\'ı</string>
+    <string name="section_indicators_hint">Gösterilen lambalar, sırayla (en fazla %1$d).</string>
+    <string name="section_info">Bilgi widget\'ı</string>
+    <string name="section_info_hint">Gösterilen satırlar, sırayla (en fazla %1$d).</string>
+    <string name="section_display">Görünüm</string>
+    <string name="show_labels">Lambaların altında adları göster</string>
+    <string name="clock_trip">Saat widget\'ında yolculuk süresini göster</string>
+    <string name="section_theme">Tema</string>
+    <string name="theme_follow">Başlatıcı gibi</string>
+    <string name="theme_headlights">Farlarla koyu</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="theme_follow_hint">Başlatıcı gibi: LibreHU Launcher\'ı (otomatik modu dahil), o yoksa Android\'i izler. Farlarla koyu: farlar yanar yanmaz koyu.</string>
+    <string name="demo">Demo modu</string>
+    <string name="demo_hint">Widget\'ları arabadan uzakta denemek için sahte değerler.</string>
+    <string name="add_hint">Widget\'ları başlatıcınızın widget listesinden ekleyin (LibreHU Launcher: panelde boş bir yere dokunun).</string>
+    <string name="pick_probe">Bu widget ne göstersin?</string>
+    <string name="move_up">Yukarı</string>
+    <string name="move_down">Aşağı</string>
+    <string name="unknown_hint">— = bu veri kaynağı bildirmiyor.</string>
+    <string name="probe_ext_amp">Harici amfi</string>
+    <string name="info_title">Bilgi</string>
+    <string name="info_version">Sürüm %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU katkıda bulunanları.</string>
+    <string name="info_licence">Özgür yazılım: GNU Affero General Public License sürüm 3 veya (tercihinize göre) daha sonraki bir sürüm kapsamında, 7. bölümdeki ek koşullarla paylaşabilir ve değiştirebilirsiniz: “Based on LibreHU” ibaresini koruyun ve değiştirilmiş sürümü öyle belirtin. Değiştirilmiş bir sürümü dağıtan ya da uzaktan kullandıran, tam kaynak kodunu aynı lisansla vermelidir. Yasanın izin verdiği ölçüde garanti yoktur (bölüm 15 ve 16).</string>
+    <string name="info_source">Kaynak kodu: %1$s</string>
+    <string name="info_contact">İletişim: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Ek koşullar</string>
+    <string name="info_others">Diğer projelerin kodu, kaynakları ve verileri</string>
+    <string name="info_others_hint">Lisansını okumak için birine dokunun.</string>
+    <string name="info_close">Kapat</string>
+</resources>

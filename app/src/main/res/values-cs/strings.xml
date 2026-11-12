@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Czech translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Widgety LibreHU</string>
+    <string name="notif_channel">Aktualizace widgetů</string>
+    <string name="notif_text">Čte autorádio pro widgety</string>
+    <string name="widget_indicators_description">Kontrolky: ruční brzda, světla, zapalování, zpátečka, blinkry</string>
+    <string name="widget_clock_description">Čas, datum a doba jízdy od zapnutí zapalování</string>
+    <string name="widget_info_description">Hodnoty autorádia: zapalování, ruční brzda, doba jízdy, hlasitost, verze MCU</string>
+    <string name="widget_single_description">Jedna velká kontrolka nebo hodnota podle výběru</string>
+    <string name="widget_info_title">Vozidlo</string>
+    <string name="probe_handbrake">Ruční brzda</string>
+    <string name="probe_headlights">Světla</string>
+    <string name="probe_acc">Zapalování</string>
+    <string name="probe_reverse">Zpátečka</string>
+    <string name="probe_turn_left">Vlevo</string>
+    <string name="probe_turn_right">Vpravo</string>
+    <string name="probe_link">Spojení s MCU</string>
+    <string name="probe_mcu_version">Verze MCU</string>
+    <string name="probe_volume">Hlasitost</string>
+    <string name="probe_trip">Doba jízdy</string>
+    <string name="state_on">Zap.</string>
+    <string name="state_off">Vyp.</string>
+    <string name="state_engaged">Zatažená</string>
+    <string name="state_released">Uvolněná</string>
+    <string name="source">Zdroj dat: %1$s</string>
+    <string name="live">Aktuální hodnoty</string>
+    <string name="section_indicators">Widget kontrolek</string>
+    <string name="section_indicators_hint">Zobrazené kontrolky v pořadí (max. %1$d).</string>
+    <string name="section_info">Informační widget</string>
+    <string name="section_info_hint">Zobrazené řádky v pořadí (max. %1$d).</string>
+    <string name="section_display">Zobrazení</string>
+    <string name="show_labels">Zobrazit názvy pod kontrolkami</string>
+    <string name="clock_trip">Zobrazit dobu jízdy na widgetu hodin</string>
+    <string name="section_theme">Motiv</string>
+    <string name="theme_follow">Jako spouštěč</string>
+    <string name="theme_headlights">Tmavý se světly</string>
+    <string name="theme_light">Světlý</string>
+    <string name="theme_dark">Tmavý</string>
+    <string name="theme_follow_hint">Jako spouštěč: řídí se aplikací LibreHU Launcher (včetně jejího automatického režimu), bez ní Androidem. Tmavý se světly: tmavý, jakmile svítí světlomety.</string>
+    <string name="demo">Ukázkový režim</string>
+    <string name="demo_hint">Smyšlené hodnoty, abyste widgety vyzkoušeli mimo auto.</string>
+    <string name="add_hint">Přidejte widgety ze seznamu widgetů spouštěče (LibreHU Launcher: klepněte na prázdné místo palubní desky).</string>
+    <string name="pick_probe">Co má tento widget zobrazovat?</string>
+    <string name="move_up">Nahoru</string>
+    <string name="move_down">Dolů</string>
+    <string name="unknown_hint">— = tento zdroj dat to neposkytuje.</string>
+    <string name="probe_ext_amp">Externí zesilovač</string>
+    <string name="info_title">Informace</string>
+    <string name="info_version">Verze %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 přispěvatelé LibreHU.</string>
+    <string name="info_licence">Svobodný software: můžete jej sdílet a upravovat podle licence GNU Affero General Public License, verze 3 nebo (dle vaší volby) jakékoli pozdější, s dodatečnými podmínkami jejího oddílu 7: zachovat označení „Based on LibreHU“ a upravenou verzi jako takovou označit. Kdo šíří upravenou verzi nebo ji nechá používat na dálku, musí poskytnout její úplný zdrojový kód pod stejnou licencí. Bez záruky v rozsahu povoleném zákonem (oddíly 15 a 16).</string>
+    <string name="info_source">Zdrojový kód: %1$s</string>
+    <string name="info_contact">Kontakt: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Dodatečné podmínky</string>
+    <string name="info_others">Kód, zdroje a data jiných projektů</string>
+    <string name="info_others_hint">Klepnutím zobrazíte licenci.</string>
+    <string name="info_close">Zavřít</string>
+</resources>

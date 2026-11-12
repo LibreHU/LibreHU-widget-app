@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Romanian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Widgeturi LibreHU</string>
+    <string name="notif_channel">Actualizarea widgeturilor</string>
+    <string name="notif_text">Citește unitatea multimedia pentru widgeturi</string>
+    <string name="widget_indicators_description">Martori: frână de mână, lumini, contact, marșarier, semnalizări</string>
+    <string name="widget_clock_description">Ora, data și durata călătoriei de la contact</string>
+    <string name="widget_info_description">Valori ale unității multimedia: contact, frână de mână, durata călătoriei, volum, versiune MCU</string>
+    <string name="widget_single_description">Un martor mare sau o valoare la alegere</string>
+    <string name="widget_info_title">Vehicul</string>
+    <string name="probe_handbrake">Frână de mână</string>
+    <string name="probe_headlights">Lumini</string>
+    <string name="probe_acc">Contact</string>
+    <string name="probe_reverse">Marșarier</string>
+    <string name="probe_turn_left">Stânga</string>
+    <string name="probe_turn_right">Dreapta</string>
+    <string name="probe_link">Legătura MCU</string>
+    <string name="probe_mcu_version">Versiune MCU</string>
+    <string name="probe_volume">Volum</string>
+    <string name="probe_trip">Durata călătoriei</string>
+    <string name="state_on">Da</string>
+    <string name="state_off">Nu</string>
+    <string name="state_engaged">Trasă</string>
+    <string name="state_released">Eliberată</string>
+    <string name="source">Sursa datelor: %1$s</string>
+    <string name="live">Valori în timp real</string>
+    <string name="section_indicators">Widget martori</string>
+    <string name="section_indicators_hint">Martori afișați, în ordine (max. %1$d).</string>
+    <string name="section_info">Widget informații</string>
+    <string name="section_info_hint">Rânduri afișate, în ordine (max. %1$d).</string>
+    <string name="section_display">Afișare</string>
+    <string name="show_labels">Afișează numele sub martori</string>
+    <string name="clock_trip">Afișează durata călătoriei pe widgetul ceas</string>
+    <string name="section_theme">Temă</string>
+    <string name="theme_follow">Ca lansatorul</string>
+    <string name="theme_headlights">Întunecată cu luminile</string>
+    <string name="theme_light">Luminoasă</string>
+    <string name="theme_dark">Întunecată</string>
+    <string name="theme_follow_hint">Ca lansatorul: urmează LibreHU Launcher (inclusiv modul său automat) sau Android fără el. Întunecată cu luminile: întunecată imediat ce farurile sunt aprinse.</string>
+    <string name="demo">Mod demo</string>
+    <string name="demo_hint">Valori fictive, pentru a încerca widgeturile departe de mașină.</string>
+    <string name="add_hint">Adaugă widgeturile din lista de widgeturi a lansatorului (LibreHU Launcher: atinge un loc gol din tabloul de bord).</string>
+    <string name="pick_probe">Ce să afișeze acest widget?</string>
+    <string name="move_up">Sus</string>
+    <string name="move_down">Jos</string>
+    <string name="unknown_hint">— = nefurnizat de această sursă de date.</string>
+    <string name="probe_ext_amp">Amplificator extern</string>
+    <string name="info_title">Informații</string>
+    <string name="info_version">Versiunea %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 contribuitorii LibreHU.</string>
+    <string name="info_licence">Software liber: îl poți distribui și modifica în condițiile GNU Affero General Public License, versiunea 3 sau (la alegerea ta) orice versiune ulterioară, cu termenii suplimentari din secțiunea 7: păstrează mențiunea „Based on LibreHU” și marchează o versiune modificată ca atare. Cine distribuie o versiune modificată sau o lasă folosită de la distanță trebuie să ofere codul sursă complet sub aceeași licență. Fără garanție, în măsura permisă de lege (secțiunile 15 și 16).</string>
+    <string name="info_source">Cod sursă: %1$s</string>
+    <string name="info_contact">Contact: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Termeni suplimentari</string>
+    <string name="info_others">Cod, resurse și date din alte proiecte</string>
+    <string name="info_others_hint">Atinge unul pentru a-i citi licența.</string>
+    <string name="info_close">Închide</string>
+</resources>
