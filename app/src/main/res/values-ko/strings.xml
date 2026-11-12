@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Korean translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU 위젯</string>
+    <string name="notif_channel">위젯 업데이트</string>
+    <string name="notif_text">위젯용으로 헤드 유닛을 읽는 중</string>
+    <string name="widget_indicators_description">표시등: 주차 브레이크, 조명, 시동, 후진, 방향지시등</string>
+    <string name="widget_clock_description">시간, 날짜, 시동 후 주행 시간</string>
+    <string name="widget_info_description">헤드 유닛 값: 시동, 주차 브레이크, 주행 시간, 볼륨, MCU 버전</string>
+    <string name="widget_single_description">원하는 큰 표시등 또는 값 하나</string>
+    <string name="widget_info_title">차량</string>
+    <string name="probe_handbrake">주차 브레이크</string>
+    <string name="probe_headlights">조명</string>
+    <string name="probe_acc">시동</string>
+    <string name="probe_reverse">후진</string>
+    <string name="probe_turn_left">왼쪽</string>
+    <string name="probe_turn_right">오른쪽</string>
+    <string name="probe_link">MCU 연결</string>
+    <string name="probe_mcu_version">MCU 버전</string>
+    <string name="probe_volume">볼륨</string>
+    <string name="probe_trip">주행 시간</string>
+    <string name="state_on">켜짐</string>
+    <string name="state_off">꺼짐</string>
+    <string name="state_engaged">체결</string>
+    <string name="state_released">해제</string>
+    <string name="source">데이터 출처: %1$s</string>
+    <string name="live">실시간 값</string>
+    <string name="section_indicators">표시등 위젯</string>
+    <string name="section_indicators_hint">표시할 표시등, 순서대로(최대 %1$d개).</string>
+    <string name="section_info">정보 위젯</string>
+    <string name="section_info_hint">표시할 행, 순서대로(최대 %1$d개).</string>
+    <string name="section_display">표시</string>
+    <string name="show_labels">표시등 아래에 이름 표시</string>
+    <string name="clock_trip">시계 위젯에 주행 시간 표시</string>
+    <string name="section_theme">테마</string>
+    <string name="theme_follow">런처와 같게</string>
+    <string name="theme_headlights">조명 켜지면 어둡게</string>
+    <string name="theme_light">밝게</string>
+    <string name="theme_dark">어둡게</string>
+    <string name="theme_follow_hint">런처와 같게: LibreHU Launcher(자동 모드 포함)를 따르고, 없으면 Android를 따릅니다. 조명 켜지면 어둡게: 전조등이 켜지면 바로 어두워집니다.</string>
+    <string name="demo">데모 모드</string>
+    <string name="demo_hint">차 밖에서 위젯을 시험해 볼 수 있는 가짜 값.</string>
+    <string name="add_hint">런처의 위젯 목록에서 위젯을 추가하세요(LibreHU Launcher: 대시보드의 빈 칸을 누르세요).</string>
+    <string name="pick_probe">이 위젯에 무엇을 표시할까요?</string>
+    <string name="move_up">위로</string>
+    <string name="move_down">아래로</string>
+    <string name="unknown_hint">— = 이 데이터 출처에서 제공하지 않음.</string>
+    <string name="probe_ext_amp">외부 앰프</string>
+    <string name="info_title">정보</string>
+    <string name="info_version">버전 %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU 기여자.</string>
+    <string name="info_licence">자유 소프트웨어: GNU Affero General Public License 버전 3 또는 (선택에 따라) 그 이후 버전에 따라 공유하고 수정할 수 있으며, 7조의 추가 조건이 적용됩니다: “Based on LibreHU” 표시를 유지하고 수정한 버전은 수정되었음을 표시해야 합니다. 수정한 버전을 배포하거나 원격으로 사용하게 하는 사람은 전체 소스 코드를 같은 라이선스로 제공해야 합니다. 법이 허용하는 범위에서 보증하지 않습니다(15조 및 16조).</string>
+    <string name="info_source">소스 코드: %1$s</string>
+    <string name="info_contact">연락처: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">추가 조건</string>
+    <string name="info_others">다른 프로젝트의 코드, 리소스 및 데이터</string>
+    <string name="info_others_hint">항목을 누르면 라이선스를 볼 수 있습니다.</string>
+    <string name="info_close">닫기</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Portuguese (Portugal) translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Widgets LibreHU</string>
+    <string name="notif_channel">Atualização dos widgets</string>
+    <string name="notif_text">Lê o autorrádio para os widgets</string>
+    <string name="widget_indicators_description">Avisadores: travão de mão, luzes, ignição, marcha-atrás, piscas</string>
+    <string name="widget_clock_description">Hora, data e tempo de viagem desde a ignição</string>
+    <string name="widget_info_description">Valores do autorrádio: ignição, travão de mão, tempo de viagem, volume, versão da MCU</string>
+    <string name="widget_single_description">Um avisador grande ou um valor à escolha</string>
+    <string name="widget_info_title">Veículo</string>
+    <string name="probe_handbrake">Travão de mão</string>
+    <string name="probe_headlights">Luzes</string>
+    <string name="probe_acc">Ignição</string>
+    <string name="probe_reverse">Marcha-atrás</string>
+    <string name="probe_turn_left">Esquerda</string>
+    <string name="probe_turn_right">Direita</string>
+    <string name="probe_link">Ligação MCU</string>
+    <string name="probe_mcu_version">Versão da MCU</string>
+    <string name="probe_volume">Volume</string>
+    <string name="probe_trip">Tempo de viagem</string>
+    <string name="state_on">Sim</string>
+    <string name="state_off">Não</string>
+    <string name="state_engaged">Puxado</string>
+    <string name="state_released">Solto</string>
+    <string name="source">Origem dos dados: %1$s</string>
+    <string name="live">Valores em direto</string>
+    <string name="section_indicators">Widget de avisadores</string>
+    <string name="section_indicators_hint">Avisadores mostrados, por ordem (máx. %1$d).</string>
+    <string name="section_info">Widget de informações</string>
+    <string name="section_info_hint">Linhas mostradas, por ordem (máx. %1$d).</string>
+    <string name="section_display">Visualização</string>
+    <string name="show_labels">Mostrar os nomes por baixo dos avisadores</string>
+    <string name="clock_trip">Mostrar o tempo de viagem no widget de relógio</string>
+    <string name="section_theme">Tema</string>
+    <string name="theme_follow">Como o launcher</string>
+    <string name="theme_headlights">Escuro com as luzes</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="theme_follow_hint">Como o launcher: segue o LibreHU Launcher (incluindo o modo automático), ou o Android sem ele. Escuro com as luzes: escuro assim que os faróis acendem.</string>
+    <string name="demo">Modo de demonstração</string>
+    <string name="demo_hint">Valores fictícios, para experimentar os widgets fora do carro.</string>
+    <string name="add_hint">Adicione os widgets a partir da lista de widgets do launcher (LibreHU Launcher: toque num espaço vazio do painel).</string>
+    <string name="pick_probe">O que deve mostrar este widget?</string>
+    <string name="move_up">Subir</string>
+    <string name="move_down">Descer</string>
+    <string name="unknown_hint">— = não fornecido por esta origem de dados.</string>
+    <string name="probe_ext_amp">Amplificador externo</string>
+    <string name="info_title">Informações</string>
+    <string name="info_version">Versão %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 contribuidores do LibreHU.</string>
+    <string name="info_licence">Software livre: pode partilhá-lo e modificá-lo nos termos da GNU Affero General Public License, versão 3 ou (à sua escolha) qualquer versão posterior, com os termos adicionais da sua secção 7: manter a menção “Based on LibreHU” e assinalar uma versão modificada como tal. Quem distribuir uma versão modificada, ou a deixar usar à distância, tem de fornecer o código-fonte completo sob a mesma licença. Sem garantia, na medida permitida por lei (secções 15 e 16).</string>
+    <string name="info_source">Código-fonte: %1$s</string>
+    <string name="info_contact">Contacto: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Termos adicionais</string>
+    <string name="info_others">Código, recursos e dados de outros projetos</string>
+    <string name="info_others_hint">Toque num para ler a licença.</string>
+    <string name="info_close">Fechar</string>
+</resources>

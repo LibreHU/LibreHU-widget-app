@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chinese (Simplified) translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU 小部件</string>
+    <string name="notif_channel">小部件更新</string>
+    <string name="notif_text">为小部件读取车机数据</string>
+    <string name="widget_indicators_description">指示灯：手刹、车灯、点火、倒车、转向灯</string>
+    <string name="widget_clock_description">时间、日期和点火后的行程时间</string>
+    <string name="widget_info_description">车机数值：点火、手刹、行程时间、音量、MCU 版本</string>
+    <string name="widget_single_description">一个可自选的大指示灯或数值</string>
+    <string name="widget_info_title">车辆</string>
+    <string name="probe_handbrake">手刹</string>
+    <string name="probe_headlights">车灯</string>
+    <string name="probe_acc">点火</string>
+    <string name="probe_reverse">倒车</string>
+    <string name="probe_turn_left">左转</string>
+    <string name="probe_turn_right">右转</string>
+    <string name="probe_link">MCU 连接</string>
+    <string name="probe_mcu_version">MCU 版本</string>
+    <string name="probe_volume">音量</string>
+    <string name="probe_trip">行程时间</string>
+    <string name="state_on">开</string>
+    <string name="state_off">关</string>
+    <string name="state_engaged">拉起</string>
+    <string name="state_released">松开</string>
+    <string name="source">数据来源：%1$s</string>
+    <string name="live">实时数值</string>
+    <string name="section_indicators">指示灯小部件</string>
+    <string name="section_indicators_hint">显示的指示灯，按顺序（最多 %1$d 个）。</string>
+    <string name="section_info">信息小部件</string>
+    <string name="section_info_hint">显示的行，按顺序（最多 %1$d 行）。</string>
+    <string name="section_display">显示</string>
+    <string name="show_labels">在指示灯下显示名称</string>
+    <string name="clock_trip">在时钟小部件上显示行程时间</string>
+    <string name="section_theme">主题</string>
+    <string name="theme_follow">跟随启动器</string>
+    <string name="theme_headlights">开灯时深色</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_follow_hint">跟随启动器：跟随 LibreHU Launcher（包括其自动模式），没有它时跟随 Android。开灯时深色：前大灯一开即变为深色。</string>
+    <string name="demo">演示模式</string>
+    <string name="demo_hint">虚拟数值，可在车外试用小部件。</string>
+    <string name="add_hint">从启动器的小部件列表中添加小部件（LibreHU Launcher：点按仪表盘上的空位）。</string>
+    <string name="pick_probe">此小部件显示什么？</string>
+    <string name="move_up">上移</string>
+    <string name="move_down">下移</string>
+    <string name="unknown_hint">— = 此数据来源未提供。</string>
+    <string name="probe_ext_amp">外置功放</string>
+    <string name="info_title">关于</string>
+    <string name="info_version">版本 %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU 贡献者。</string>
+    <string name="info_licence">自由软件：您可以依据 GNU Affero 通用公共许可证第 3 版或（由您选择）任何更新版本分享和修改它，并遵守其第 7 条的附加条款：保留“Based on LibreHU”声明，并将修改版标明为修改版。分发修改版或允许他人远程使用修改版的人，必须以相同许可证提供其完整源代码。在法律允许的范围内不提供任何担保（第 15 和 16 条）。</string>
+    <string name="info_source">源代码：%1$s</string>
+    <string name="info_contact">联系方式：librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">附加条款</string>
+    <string name="info_others">其他项目的代码、资源和数据</string>
+    <string name="info_others_hint">点按一项查看其许可证。</string>
+    <string name="info_close">关闭</string>
+</resources>

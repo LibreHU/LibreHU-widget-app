@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ukrainian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Віджети LibreHU</string>
+    <string name="notif_channel">Оновлення віджетів</string>
+    <string name="notif_text">Читає дані магнітоли для віджетів</string>
+    <string name="widget_indicators_description">Індикатори: ручник, фари, запалювання, задній хід, поворотники</string>
+    <string name="widget_clock_description">Час, дата й час у дорозі від увімкнення запалювання</string>
+    <string name="widget_info_description">Дані магнітоли: запалювання, ручник, час у дорозі, гучність, версія MCU</string>
+    <string name="widget_single_description">Один великий індикатор або значення на вибір</string>
+    <string name="widget_info_title">Автомобіль</string>
+    <string name="probe_handbrake">Ручник</string>
+    <string name="probe_headlights">Фари</string>
+    <string name="probe_acc">Запалювання</string>
+    <string name="probe_reverse">Задній хід</string>
+    <string name="probe_turn_left">Ліворуч</string>
+    <string name="probe_turn_right">Праворуч</string>
+    <string name="probe_link">Зв\'язок з MCU</string>
+    <string name="probe_mcu_version">Версія MCU</string>
+    <string name="probe_volume">Гучність</string>
+    <string name="probe_trip">Час у дорозі</string>
+    <string name="state_on">Увімк.</string>
+    <string name="state_off">Вимк.</string>
+    <string name="state_engaged">Затягнутий</string>
+    <string name="state_released">Опущений</string>
+    <string name="source">Джерело даних: %1$s</string>
+    <string name="live">Поточні значення</string>
+    <string name="section_indicators">Віджет індикаторів</string>
+    <string name="section_indicators_hint">Показані індикатори за порядком (не більше %1$d).</string>
+    <string name="section_info">Інформаційний віджет</string>
+    <string name="section_info_hint">Показані рядки за порядком (не більше %1$d).</string>
+    <string name="section_display">Відображення</string>
+    <string name="show_labels">Підписи під індикаторами</string>
+    <string name="clock_trip">Показувати час у дорозі на віджеті годинника</string>
+    <string name="section_theme">Тема</string>
+    <string name="theme_follow">Як у лаунчері</string>
+    <string name="theme_headlights">Темна з увімкненими фарами</string>
+    <string name="theme_light">Світла</string>
+    <string name="theme_dark">Темна</string>
+    <string name="theme_follow_hint">Як у лаунчері: стежить за LibreHU Launcher (разом з його автоматичним режимом), а без нього — за Android. Темна з увімкненими фарами: темна, щойно увімкнено фари.</string>
+    <string name="demo">Демо-режим</string>
+    <string name="demo_hint">Вигадані значення, щоб випробувати віджети поза автомобілем.</string>
+    <string name="add_hint">Додайте віджети зі списку віджетів лаунчера (LibreHU Launcher: торкніться порожнього місця панелі).</string>
+    <string name="pick_probe">Що показувати в цьому віджеті?</string>
+    <string name="move_up">Вгору</string>
+    <string name="move_down">Вниз</string>
+    <string name="unknown_hint">— = це джерело даних не повідомляє значення.</string>
+    <string name="probe_ext_amp">Зовнішній підсилювач</string>
+    <string name="info_title">Про застосунок</string>
+    <string name="info_version">Версія %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 учасники проєкту LibreHU.</string>
+    <string name="info_licence">Вільне ПЗ: його можна поширювати та змінювати на умовах GNU Affero General Public License версії 3 або (на ваш вибір) будь-якої пізнішої, з додатковими умовами її розділу 7: зберігати позначку “Based on LibreHU” і позначати змінену версію як змінену. Хто поширює змінену версію або дає користуватися нею віддалено, мусить надати її повний вихідний код на тих самих умовах. Без гарантій у межах, дозволених законом (розділи 15 і 16).</string>
+    <string name="info_source">Вихідний код: %1$s</string>
+    <string name="info_contact">Контакт: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Додаткові умови</string>
+    <string name="info_others">Код, ресурси й дані інших проєктів</string>
+    <string name="info_others_hint">Торкніться, щоб прочитати ліцензію.</string>
+    <string name="info_close">Закрити</string>
+</resources>

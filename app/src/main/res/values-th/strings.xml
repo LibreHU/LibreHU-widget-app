@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thai translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">วิดเจ็ต LibreHU</string>
+    <string name="notif_channel">การอัปเดตวิดเจ็ต</string>
+    <string name="notif_text">อ่านข้อมูลจอติดรถยนต์สำหรับวิดเจ็ต</string>
+    <string name="widget_indicators_description">ไฟเตือน: เบรกมือ ไฟ สวิตช์กุญแจ เกียร์ถอยหลัง ไฟเลี้ยว</string>
+    <string name="widget_clock_description">เวลา วันที่ และเวลาเดินทางตั้งแต่บิดกุญแจ</string>
+    <string name="widget_info_description">ค่าของจอติดรถยนต์: สวิตช์กุญแจ เบรกมือ เวลาเดินทาง ระดับเสียง เวอร์ชัน MCU</string>
+    <string name="widget_single_description">ไฟเตือนขนาดใหญ่หรือค่าหนึ่งค่าตามที่เลือก</string>
+    <string name="widget_info_title">รถยนต์</string>
+    <string name="probe_handbrake">เบรกมือ</string>
+    <string name="probe_headlights">ไฟ</string>
+    <string name="probe_acc">สวิตช์กุญแจ</string>
+    <string name="probe_reverse">เกียร์ถอยหลัง</string>
+    <string name="probe_turn_left">ซ้าย</string>
+    <string name="probe_turn_right">ขวา</string>
+    <string name="probe_link">การเชื่อมต่อ MCU</string>
+    <string name="probe_mcu_version">เวอร์ชัน MCU</string>
+    <string name="probe_volume">ระดับเสียง</string>
+    <string name="probe_trip">เวลาเดินทาง</string>
+    <string name="state_on">เปิด</string>
+    <string name="state_off">ปิด</string>
+    <string name="state_engaged">ดึงอยู่</string>
+    <string name="state_released">ปลดแล้ว</string>
+    <string name="source">แหล่งข้อมูล: %1$s</string>
+    <string name="live">ค่าปัจจุบัน</string>
+    <string name="section_indicators">วิดเจ็ตไฟเตือน</string>
+    <string name="section_indicators_hint">ไฟเตือนที่แสดง ตามลำดับ (สูงสุด %1$d)</string>
+    <string name="section_info">วิดเจ็ตข้อมูล</string>
+    <string name="section_info_hint">แถวที่แสดง ตามลำดับ (สูงสุด %1$d)</string>
+    <string name="section_display">การแสดงผล</string>
+    <string name="show_labels">แสดงชื่อใต้ไฟเตือน</string>
+    <string name="clock_trip">แสดงเวลาเดินทางบนวิดเจ็ตนาฬิกา</string>
+    <string name="section_theme">ธีม</string>
+    <string name="theme_follow">ตามลอนเชอร์</string>
+    <string name="theme_headlights">มืดเมื่อเปิดไฟ</string>
+    <string name="theme_light">สว่าง</string>
+    <string name="theme_dark">มืด</string>
+    <string name="theme_follow_hint">ตามลอนเชอร์: ตาม LibreHU Launcher (รวมโหมดอัตโนมัติ) หรือตาม Android หากไม่มี มืดเมื่อเปิดไฟ: มืดทันทีที่เปิดไฟหน้า</string>
+    <string name="demo">โหมดสาธิต</string>
+    <string name="demo_hint">ค่าสมมุติ สำหรับลองใช้วิดเจ็ตนอกรถ</string>
+    <string name="add_hint">เพิ่มวิดเจ็ตจากรายการวิดเจ็ตของลอนเชอร์ (LibreHU Launcher: แตะช่องว่างบนแดชบอร์ด)</string>
+    <string name="pick_probe">วิดเจ็ตนี้ควรแสดงอะไร</string>
+    <string name="move_up">ขึ้น</string>
+    <string name="move_down">ลง</string>
+    <string name="unknown_hint">— = แหล่งข้อมูลนี้ไม่ได้รายงาน</string>
+    <string name="probe_ext_amp">แอมป์ภายนอก</string>
+    <string name="info_title">ข้อมูล</string>
+    <string name="info_version">เวอร์ชัน %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 ผู้ร่วมพัฒนา LibreHU</string>
+    <string name="info_licence">ซอฟต์แวร์เสรี: คุณแบ่งปันและแก้ไขได้ภายใต้ GNU Affero General Public License รุ่น 3 หรือ (ตามที่คุณเลือก) รุ่นใดก็ได้ที่ใหม่กว่า พร้อมข้อกำหนดเพิ่มเติมตามมาตรา 7: คงข้อความ “Based on LibreHU” ไว้ และระบุว่ารุ่นที่แก้ไขเป็นรุ่นที่แก้ไขแล้ว ผู้ที่เผยแพร่รุ่นที่แก้ไข หรือให้ผู้อื่นใช้งานจากระยะไกล ต้องให้ซอร์สโค้ดฉบับสมบูรณ์ภายใต้สัญญาอนุญาตเดียวกัน ไม่มีการรับประกันเท่าที่กฎหมายอนุญาต (มาตรา 15 และ 16)</string>
+    <string name="info_source">ซอร์สโค้ด: %1$s</string>
+    <string name="info_contact">ติดต่อ: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">ข้อกำหนดเพิ่มเติม</string>
+    <string name="info_others">โค้ด ทรัพยากร และข้อมูลจากโครงการอื่น</string>
+    <string name="info_others_hint">แตะรายการเพื่ออ่านสัญญาอนุญาต</string>
+    <string name="info_close">ปิด</string>
+</resources>
