@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vietnamese translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Tiện ích LibreHU</string>
+    <string name="notif_channel">Cập nhật tiện ích</string>
+    <string name="notif_text">Đọc dữ liệu màn hình ô tô cho các tiện ích</string>
+    <string name="widget_indicators_description">Đèn báo: phanh tay, đèn, khóa điện, số lùi, xi nhan</string>
+    <string name="widget_clock_description">Giờ, ngày và thời gian đi từ lúc bật khóa điện</string>
+    <string name="widget_info_description">Giá trị của màn hình ô tô: khóa điện, phanh tay, thời gian đi, âm lượng, phiên bản MCU</string>
+    <string name="widget_single_description">Một đèn báo lớn hoặc một giá trị tùy chọn</string>
+    <string name="widget_info_title">Xe</string>
+    <string name="probe_handbrake">Phanh tay</string>
+    <string name="probe_headlights">Đèn</string>
+    <string name="probe_acc">Khóa điện</string>
+    <string name="probe_reverse">Số lùi</string>
+    <string name="probe_turn_left">Trái</string>
+    <string name="probe_turn_right">Phải</string>
+    <string name="probe_link">Kết nối MCU</string>
+    <string name="probe_mcu_version">Phiên bản MCU</string>
+    <string name="probe_volume">Âm lượng</string>
+    <string name="probe_trip">Thời gian đi</string>
+    <string name="state_on">Bật</string>
+    <string name="state_off">Tắt</string>
+    <string name="state_engaged">Kéo</string>
+    <string name="state_released">Nhả</string>
+    <string name="source">Nguồn dữ liệu: %1$s</string>
+    <string name="live">Giá trị trực tiếp</string>
+    <string name="section_indicators">Tiện ích đèn báo</string>
+    <string name="section_indicators_hint">Đèn báo hiển thị, theo thứ tự (tối đa %1$d).</string>
+    <string name="section_info">Tiện ích thông tin</string>
+    <string name="section_info_hint">Các dòng hiển thị, theo thứ tự (tối đa %1$d).</string>
+    <string name="section_display">Hiển thị</string>
+    <string name="show_labels">Hiện tên dưới đèn báo</string>
+    <string name="clock_trip">Hiện thời gian đi trên tiện ích đồng hồ</string>
+    <string name="section_theme">Giao diện</string>
+    <string name="theme_follow">Như trình chạy</string>
+    <string name="theme_headlights">Tối khi bật đèn</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="theme_follow_hint">Như trình chạy: theo LibreHU Launcher (kể cả chế độ tự động), hoặc theo Android nếu không có. Tối khi bật đèn: tối ngay khi bật đèn pha.</string>
+    <string name="demo">Chế độ demo</string>
+    <string name="demo_hint">Giá trị giả, để thử tiện ích khi không ở trên xe.</string>
+    <string name="add_hint">Thêm tiện ích từ danh sách tiện ích của trình chạy (LibreHU Launcher: chạm vào một ô trống trên bảng điều khiển).</string>
+    <string name="pick_probe">Tiện ích này sẽ hiện gì?</string>
+    <string name="move_up">Lên</string>
+    <string name="move_down">Xuống</string>
+    <string name="unknown_hint">— = nguồn dữ liệu này không cung cấp.</string>
+    <string name="probe_ext_amp">Ampli ngoài</string>
+    <string name="info_title">Thông tin</string>
+    <string name="info_version">Phiên bản %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 những người đóng góp cho LibreHU.</string>
+    <string name="info_licence">Phần mềm tự do: bạn có thể chia sẻ và sửa đổi theo GNU Affero General Public License phiên bản 3 hoặc (tùy bạn chọn) bất kỳ phiên bản nào mới hơn, kèm các điều khoản bổ sung tại mục 7: giữ dòng “Based on LibreHU” và ghi rõ phiên bản đã sửa đổi. Ai phân phối phiên bản sửa đổi, hoặc cho người khác dùng từ xa, phải cung cấp toàn bộ mã nguồn theo cùng giấy phép. Không bảo hành, trong phạm vi pháp luật cho phép (mục 15 và 16).</string>
+    <string name="info_source">Mã nguồn: %1$s</string>
+    <string name="info_contact">Liên hệ: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Điều khoản bổ sung</string>
+    <string name="info_others">Mã, tài nguyên và dữ liệu của các dự án khác</string>
+    <string name="info_others_hint">Chạm vào một mục để đọc giấy phép.</string>
+    <string name="info_close">Đóng</string>
+</resources>

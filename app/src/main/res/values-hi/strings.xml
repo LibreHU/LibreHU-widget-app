@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hindi translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">LibreHU विजेट</string>
+    <string name="notif_channel">विजेट अपडेट</string>
+    <string name="notif_text">विजेट के लिए हेड यूनिट पढ़ता है</string>
+    <string name="widget_indicators_description">संकेतक लाइटें: हैंडब्रेक, लाइटें, इग्निशन, रिवर्स, टर्न सिग्नल</string>
+    <string name="widget_clock_description">समय, तारीख और इग्निशन चालू होने से यात्रा का समय</string>
+    <string name="widget_info_description">हेड यूनिट के मान: इग्निशन, हैंडब्रेक, यात्रा का समय, वॉल्यूम, MCU संस्करण</string>
+    <string name="widget_single_description">अपनी पसंद की एक बड़ी लाइट या मान</string>
+    <string name="widget_info_title">वाहन</string>
+    <string name="probe_handbrake">हैंडब्रेक</string>
+    <string name="probe_headlights">लाइटें</string>
+    <string name="probe_acc">इग्निशन</string>
+    <string name="probe_reverse">रिवर्स</string>
+    <string name="probe_turn_left">बाएँ</string>
+    <string name="probe_turn_right">दाएँ</string>
+    <string name="probe_link">MCU लिंक</string>
+    <string name="probe_mcu_version">MCU संस्करण</string>
+    <string name="probe_volume">वॉल्यूम</string>
+    <string name="probe_trip">यात्रा का समय</string>
+    <string name="state_on">चालू</string>
+    <string name="state_off">बंद</string>
+    <string name="state_engaged">लगा हुआ</string>
+    <string name="state_released">छूटा हुआ</string>
+    <string name="source">डेटा स्रोत: %1$s</string>
+    <string name="live">लाइव मान</string>
+    <string name="section_indicators">संकेतक विजेट</string>
+    <string name="section_indicators_hint">दिखाई जाने वाली लाइटें, क्रम से (अधिकतम %1$d)।</string>
+    <string name="section_info">जानकारी विजेट</string>
+    <string name="section_info_hint">दिखाई जाने वाली पंक्तियाँ, क्रम से (अधिकतम %1$d)।</string>
+    <string name="section_display">डिस्प्ले</string>
+    <string name="show_labels">लाइटों के नीचे नाम दिखाएँ</string>
+    <string name="clock_trip">घड़ी विजेट पर यात्रा का समय दिखाएँ</string>
+    <string name="section_theme">थीम</string>
+    <string name="theme_follow">लॉन्चर जैसा</string>
+    <string name="theme_headlights">लाइट जलने पर डार्क</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_dark">डार्क</string>
+    <string name="theme_follow_hint">लॉन्चर जैसा: LibreHU Launcher (उसके स्वचालित मोड सहित) का, या उसके बिना Android का अनुसरण करता है। लाइट जलने पर डार्क: हेडलाइट जलते ही डार्क।</string>
+    <string name="demo">डेमो मोड</string>
+    <string name="demo_hint">नकली मान, ताकि कार से दूर विजेट आज़माए जा सकें।</string>
+    <string name="add_hint">अपने लॉन्चर की विजेट सूची से विजेट जोड़ें (LibreHU Launcher: डैशबोर्ड की किसी खाली जगह पर टैप करें)।</string>
+    <string name="pick_probe">यह विजेट क्या दिखाए?</string>
+    <string name="move_up">ऊपर</string>
+    <string name="move_down">नीचे</string>
+    <string name="unknown_hint">— = यह डेटा स्रोत नहीं बताता।</string>
+    <string name="probe_ext_amp">बाहरी एम्प</string>
+    <string name="info_title">जानकारी</string>
+    <string name="info_version">संस्करण %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 LibreHU के योगदानकर्ता।</string>
+    <string name="info_licence">फ़्री सॉफ़्टवेयर: आप इसे GNU Affero General Public License संस्करण 3 या (अपनी पसंद से) किसी बाद के संस्करण के तहत साझा और संशोधित कर सकते हैं, इसकी धारा 7 की अतिरिक्त शर्तों के साथ: “Based on LibreHU” सूचना बनाए रखें और संशोधित संस्करण को संशोधित के रूप में चिह्नित करें। जो संशोधित संस्करण वितरित करता है या उसे दूर से उपयोग करने देता है, उसे उसी लाइसेंस के तहत पूरा सोर्स कोड देना होगा। कानून द्वारा अनुमत सीमा तक कोई वारंटी नहीं (धारा 15 और 16)।</string>
+    <string name="info_source">सोर्स कोड: %1$s</string>
+    <string name="info_contact">संपर्क: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">अतिरिक्त शर्तें</string>
+    <string name="info_others">दूसरी परियोजनाओं का कोड, संसाधन और डेटा</string>
+    <string name="info_others_hint">लाइसेंस पढ़ने के लिए किसी एक पर टैप करें।</string>
+    <string name="info_close">बंद करें</string>
+</resources>

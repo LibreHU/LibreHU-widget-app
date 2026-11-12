@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indonesian translation (LibreHU). Corrections welcome: https://github.com/LibreHU -->
+<resources>
+    <string name="app_name">Widget LibreHU</string>
+    <string name="notif_channel">Pembaruan widget</string>
+    <string name="notif_text">Membaca head unit untuk widget</string>
+    <string name="widget_indicators_description">Lampu indikator: rem tangan, lampu, kunci kontak, mundur, lampu sein</string>
+    <string name="widget_clock_description">Jam, tanggal, dan waktu perjalanan sejak kontak menyala</string>
+    <string name="widget_info_description">Nilai head unit: kunci kontak, rem tangan, waktu perjalanan, volume, versi MCU</string>
+    <string name="widget_single_description">Satu lampu besar atau nilai pilihan Anda</string>
+    <string name="widget_info_title">Kendaraan</string>
+    <string name="probe_handbrake">Rem tangan</string>
+    <string name="probe_headlights">Lampu</string>
+    <string name="probe_acc">Kunci kontak</string>
+    <string name="probe_reverse">Mundur</string>
+    <string name="probe_turn_left">Kiri</string>
+    <string name="probe_turn_right">Kanan</string>
+    <string name="probe_link">Tautan MCU</string>
+    <string name="probe_mcu_version">Versi MCU</string>
+    <string name="probe_volume">Volume</string>
+    <string name="probe_trip">Waktu perjalanan</string>
+    <string name="state_on">Nyala</string>
+    <string name="state_off">Mati</string>
+    <string name="state_engaged">Ditarik</string>
+    <string name="state_released">Dilepas</string>
+    <string name="source">Sumber data: %1$s</string>
+    <string name="live">Nilai langsung</string>
+    <string name="section_indicators">Widget indikator</string>
+    <string name="section_indicators_hint">Lampu yang ditampilkan, berurutan (maks. %1$d).</string>
+    <string name="section_info">Widget info</string>
+    <string name="section_info_hint">Baris yang ditampilkan, berurutan (maks. %1$d).</string>
+    <string name="section_display">Tampilan</string>
+    <string name="show_labels">Tampilkan nama di bawah lampu</string>
+    <string name="clock_trip">Tampilkan waktu perjalanan di widget jam</string>
+    <string name="section_theme">Tema</string>
+    <string name="theme_follow">Seperti peluncur</string>
+    <string name="theme_headlights">Gelap saat lampu menyala</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="theme_follow_hint">Seperti peluncur: mengikuti LibreHU Launcher (termasuk mode otomatisnya), atau Android jika tidak ada. Gelap saat lampu menyala: gelap begitu lampu depan menyala.</string>
+    <string name="demo">Mode demo</string>
+    <string name="demo_hint">Nilai palsu, untuk mencoba widget di luar mobil.</string>
+    <string name="add_hint">Tambahkan widget dari daftar widget peluncur Anda (LibreHU Launcher: ketuk slot kosong di dasbor).</string>
+    <string name="pick_probe">Apa yang ditampilkan widget ini?</string>
+    <string name="move_up">Naik</string>
+    <string name="move_down">Turun</string>
+    <string name="unknown_hint">— = tidak dilaporkan oleh sumber data ini.</string>
+    <string name="probe_ext_amp">Amplifier eksternal</string>
+    <string name="info_title">Info</string>
+    <string name="info_version">Versi %1$s</string>
+    <string name="info_based_on">Based on LibreHU – https://github.com/LibreHU</string>
+    <string name="info_copyright">Copyright (C) 2026 kontributor LibreHU.</string>
+    <string name="info_licence">Perangkat lunak bebas: Anda dapat membagikan dan mengubahnya menurut GNU Affero General Public License versi 3 atau (sesuai pilihan Anda) versi yang lebih baru, dengan ketentuan tambahan pasal 7: pertahankan keterangan “Based on LibreHU” dan tandai versi yang diubah sebagai versi ubahan. Siapa pun yang mendistribusikan versi ubahan, atau membiarkannya digunakan dari jarak jauh, wajib memberikan kode sumber lengkapnya dengan lisensi yang sama. Tanpa jaminan, sejauh diizinkan hukum (pasal 15 dan 16).</string>
+    <string name="info_source">Kode sumber: %1$s</string>
+    <string name="info_contact">Kontak: librehu@proton.me</string>
+    <string name="info_licence_text">GNU AGPL v3</string>
+    <string name="info_terms">Ketentuan tambahan</string>
+    <string name="info_others">Kode, sumber daya, dan data proyek lain</string>
+    <string name="info_others_hint">Ketuk salah satu untuk membaca lisensinya.</string>
+    <string name="info_close">Tutup</string>
+</resources>
